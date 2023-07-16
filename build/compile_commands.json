@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
+  "command": "/usr/bin/gcc   -O3 -DNDEBUG   -o CMakeFiles/AmigaAceplay.dir/main.c.obj   -c /home/nzjeux/local/AmigaACEPlay/main.c",
+  "file": "/home/nzjeux/local/AmigaACEPlay/main.c"
+}
+]
