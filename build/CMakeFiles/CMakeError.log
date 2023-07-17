@@ -1,552 +1,114 @@
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags:  
 
 The output was:
-No such file or directory
+1
+/home/nzjeux/local/amiga-gcc/lib/gcc/m68k-amigaos/6.5.0b/../../../../m68k-amigaos/bin/ld: cannot open output file a.out: Permission denied
+collect2: error: ld returned 1 exit status
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: -c 
 
 The output was:
-No such file or directory
+1
+Assembler messages:
+Fatal error: can't create CMakeCCompilerId.o: Permission denied
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: -Aa 
 
 The output was:
-No such file or directory
+1
+<command-line>:0:1: error: missing '(' after predicate
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
 The output was:
-No such file or directory
+1
+/home/nzjeux/local/amiga-gcc/lib/gcc/m68k-amigaos/6.5.0b/../../../../m68k-amigaos/bin/ld: cannot open output file a.out: Permission denied
+collect2: error: ld returned 1 exit status
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
-No such file or directory
+1
+m68k-amigaos-gcc: error: unrecognized argument in option '-mcpu=cortex-m3'
+m68k-amigaos-gcc: note: valid arguments to '-mcpu=' are: 51 51ac 51ag 51cn 51em 51je 51jf 51jg 51jm 51mm 51qe 51qm 5202 5204 5206 5206e 5207 5208 5210a 5211 5211a 5212 5213 5214 5216 5221x 52221 52223 52230 52231 52232 52233 52234 52235 5224 5225 52252 52254 52255 52256 52258 52259 52274 52277 5232 5233 5234 5235 523x 5249 5250 5253 5270 5271 5272 5274 5275 5280 5281 5282 528x 53011 53012 53013 53014 53015 53016 53017 5307 5327 5328 5329 532x 5372 5373 537x 5407 54410 54415 54416 54417 54418 54450 54451 54452 54453 54454 54455 5470 5471 5472 5473 5474 5475 547x 5480 5481 5482 5483 5484 5485 548x 68000 68010 68020 68030 68040 68060 68080 68302 68332 cpu32 fidoa
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags:  
 
 The output was:
-No such file or directory
+1
+/home/nzjeux/local/amiga-gcc/lib/gcc/m68k-amigaos/6.5.0b/../../../../m68k-amigaos/bin/ld: cannot open output file a.out: Permission denied
+collect2: error: ld returned 1 exit status
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: -c 
 
 The output was:
-No such file or directory
+1
+Assembler messages:
+Fatal error: can't create CMakeCCompilerId.o: Permission denied
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: -Aa 
 
 The output was:
-No such file or directory
+1
+<command-line>:0:1: error: missing '(' after predicate
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: -D__CLASSIC_C__ 
 
 The output was:
-No such file or directory
+1
+/home/nzjeux/local/amiga-gcc/lib/gcc/m68k-amigaos/6.5.0b/../../../../m68k-amigaos/bin/ld: cannot open output file a.out: Permission denied
+collect2: error: ld returned 1 exit status
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
+Compiler: /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc 
 Build flags: 
 Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
 
 The output was:
-No such file or directory
+1
+m68k-amigaos-gcc: error: unrecognized argument in option '-mcpu=cortex-m3'
+m68k-amigaos-gcc: note: valid arguments to '-mcpu=' are: 51 51ac 51ag 51cn 51em 51je 51jf 51jg 51jm 51mm 51qe 51qm 5202 5204 5206 5206e 5207 5208 5210a 5211 5211a 5212 5213 5214 5216 5221x 52221 52223 52230 52231 52232 52233 52234 52235 5224 5225 52252 52254 52255 52256 52258 52259 52274 52277 5232 5233 5234 5235 523x 5249 5250 5253 5270 5271 5272 5274 5275 5280 5281 5282 528x 53011 53012 53013 53014 53015 53016 53017 5307 5327 5328 5329 532x 5372 5373 537x 5407 54410 54415 54416 54417 54418 54450 54451 54452 54453 54454 54455 5470 5471 5472 5473 5474 5475 547x 5480 5481 5482 5483 5484 5485 548x 68000 68010 68020 68030 68040 68060 68080 68302 68332 cpu32 fidoa
 
 
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+m68k-amigaos-gcc: fatal error: no input files
+compilation terminated.
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: -m68000;-msoft-float;-fomit-frame-pointer;-mcrt=nix13
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags:  
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -c 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -Aa 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: -D__CLASSIC_C__ 
-
-The output was:
-No such file or directory
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: /home/nzjeux/local/amiga/bin/m68k-amigaos-gcc 
-Build flags: 
-Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
-
-The output was:
-No such file or directory
-
-
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
-Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+m68k-amigaos-gcc: fatal error: no input files
+compilation terminated.

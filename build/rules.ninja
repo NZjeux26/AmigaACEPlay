@@ -7,7 +7,7 @@
 
 # =============================================================================
 # Project: AmigaAceplay
-# Configuration: Release
+# Configuration: Debug
 # =============================================================================
 # =============================================================================
 
@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__AmigaAceplay
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
+  command = /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc $DEFINES $INCLUDES $FLAGS -o $out   -c $in
   description = Building C object $out
 
 
@@ -33,9 +33,19 @@ rule C_COMPILER__AmigaAceplay
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__AmigaAceplay
-  command = $PRE_LINK && /usr/bin/gcc $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__ace
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc $DEFINES $INCLUDES $FLAGS -o $out   -c $in
+  description = Building C object $out
 
 
 #############################################
