@@ -1,30 +1,36 @@
-#include <ace/
+/*Use this only if you want to enable logging to file instead of UAE console (heavy performance hit, not recommended)*/ 
+#define GENERIC_MAIN_LOG_PATH "game.log"
 
-int main(void)
-{
-  // Create a lowres window.
-  ace_window_t *window = ace_window_create(800, 600, 0);
+#include <ace/generic/main.h>
+#include <ace/managers/key.h>
+#include <ace/managers/state.h>
+// Without it compiler will yell about undeclared gameGsCreate etc
+#include "src/game.h"
 
-  // Draw ten lines of different colors in different directions.
-  for (int i = 0; i < 10; i++)
-  {
-    int x1 = rand() % 800;
-    int y1 = rand() % 600;
-    int x2 = rand() % 800;
-    int y2 = rand() % 600;
-    int color = rand() % 256;
+tStateManager *g_pGameStateManager = 0;
+tState *g_pGameState = 0;
 
-    ace_line_draw(window, x1, y1, x2, y2, color);
-  }
+void genericCreate(void) {
+  // Here goes your startup code
+  logWrite("Hello, Amiga!\n");
+  keyCreate(); // We'll use keyboard
+  // Initialize gamestate
+  g_pGameStateManager = stateManagerCreate();
+  g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, 0, 0);
 
-  // Close the window on a left mouse click.
-  ace_window_event_handler(window, ACE_EVENT_MOUSE_LEFT_DOWN, ace_window_close);
+  statePush(g_pGameStateManager, g_pGameState);
+}
 
-  // Wait for the user to close the window.
-  ace_window_wait(window);
+void genericProcess(void) {
+  // Here goes code done each game frame
+  keyProcess();
+  stateProcess(g_pGameStateManager); // Process current gamestate's loop
+}
 
-  // Cleanup.
-  ace_window_destroy(window);
-
-  return 0;
+void genericDestroy(void) {
+  // Here goes your cleanup code
+  stateManagerDestroy(g_pGameStateManager);
+  stateDestroy(g_pGameState);
+  keyDestroy(); // We don't need it anymore
+  logWrite("Goodbye, Amiga!\n");
 }

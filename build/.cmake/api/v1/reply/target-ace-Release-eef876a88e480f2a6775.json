@@ -166,6 +166,12 @@
 			{
 				"command" : 3,
 				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
 				"line" : 64,
 				"parent" : 0
 			},
@@ -202,13 +208,17 @@
 			[
 				{
 					"backtrace" : 5,
+					"define" : "ACE_DEBUG"
+				},
+				{
+					"backtrace" : 6,
 					"define" : "AMIGA"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/home/nzjeux/local/AmigaACEPlay/deps/ace/include"
 				}
 			],
@@ -257,7 +267,7 @@
 			],
 			"sysroot" : 
 			{
-				"path" : "/home/nzjeux/local/amiga"
+				"path" : "/home/nzjeux/local/amiga-gcc"
 			}
 		}
 	],

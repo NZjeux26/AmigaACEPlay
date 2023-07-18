@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: AmigaAceplay
-# Configuration: Debug
+# Configuration: Release
 # =============================================================================
 
 #############################################
@@ -128,7 +128,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_AmigaAceplay: phony || cmake_object_order_depends_target_ace
 
 build CMakeFiles/AmigaAceplay.dir/main.c.obj: C_COMPILER__AmigaAceplay ../main.c || cmake_object_order_depends_target_AmigaAceplay
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = CMakeFiles/AmigaAceplay.dir/main.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -145,7 +145,6 @@ build CMakeFiles/AmigaAceplay.dir/main.c.obj: C_COMPILER__AmigaAceplay ../main.c
 
 build AmigaAceplay: C_EXECUTABLE_LINKER__AmigaAceplay ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj CMakeFiles/AmigaAceplay.dir/main.c.obj || ace/ace
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13
-  LINK_FLAGS = -ldebug
   OBJECT_DIR = CMakeFiles/AmigaAceplay.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -256,7 +255,7 @@ build ace/package: phony ace/CMakeFiles/package.util
 build cmake_object_order_depends_target_ace: phony || ace/CMakeFiles/ace.dir
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/audio.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -264,7 +263,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj: C_COMPILER__ace ../de
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/blit.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -272,7 +271,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/bob.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -280,7 +279,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/copper.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -288,7 +287,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj: C_COMPILER__ace ../d
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/game.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -296,7 +295,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/joy.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -304,7 +303,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/key.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -312,7 +311,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/log.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -320,7 +319,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/memory.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -328,7 +327,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj: C_COMPILER__ace ../d
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/mouse.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -336,7 +335,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj: C_COMPILER__ace ../de
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/ptplayer.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -344,7 +343,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj: C_COMPILER__ace ..
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/rand.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -352,7 +351,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/sprite.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -360,7 +359,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj: C_COMPILER__ace ../d
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/state.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -368,7 +367,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj: C_COMPILER__ace ../de
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/system.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -376,7 +375,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj: C_COMPILER__ace ../d
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/timer.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -384,7 +383,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj: C_COMPILER__ace ../de
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/viewport/camera.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -392,7 +391,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj: C_COMPILER_
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers/viewport
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/viewport/scrollbuffer.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -400,7 +399,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj: C_COM
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers/viewport
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/viewport/simplebuffer.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -408,7 +407,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj: C_COM
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers/viewport
 
 build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj: C_COMPILER__ace ../deps/ace/src/ace/managers/viewport/tilebuffer.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -416,7 +415,7 @@ build ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj: C_COMPI
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/managers/viewport
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/bitmap.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -424,7 +423,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/bmframe.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -432,7 +431,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/chunky.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -440,7 +439,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/custom.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -448,7 +447,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/dir.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -456,7 +455,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj: C_COMPILER__ace ../deps/ac
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/extview.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -464,7 +463,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/file.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -472,7 +471,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj: C_COMPILER__ace ../deps/a
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/font.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -480,7 +479,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj: C_COMPILER__ace ../deps/a
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/palette.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -488,7 +487,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/sprite.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -496,7 +495,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/string.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -504,7 +503,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj: C_COMPILER__ace ../deps
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj: C_COMPILER__ace ../deps/ace/src/ace/utils/tag.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -512,7 +511,7 @@ build ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj: C_COMPILER__ace ../deps/ac
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/ace/utils
 
 build ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/fix16.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -520,7 +519,7 @@ build ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj: C_COMPILER__ace ../deps/ac
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/fixmath
 
 build ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/fix16_exp.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -528,7 +527,7 @@ build ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/fixmath
 
 build ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/fix16_sqrt.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -536,7 +535,7 @@ build ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj: C_COMPILER__ace ../de
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/fixmath
 
 build ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/fix16_str.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -544,7 +543,7 @@ build ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj: C_COMPILER__ace ../dep
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/fixmath
 
 build ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/fix16_trig.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -552,7 +551,7 @@ build ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj: C_COMPILER__ace ../de
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/fixmath
 
 build ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/fract32.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include
@@ -560,7 +559,7 @@ build ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj: C_COMPILER__ace ../deps/
   OBJECT_FILE_DIR = ace/CMakeFiles/ace.dir/src/fixmath
 
 build ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj: C_COMPILER__ace ../deps/ace/src/fixmath/uint32.c || cmake_object_order_depends_target_ace
-  DEFINES = -DAMIGA
+  DEFINES = -DACE_DEBUG -DAMIGA
   DEP_FILE = ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj.d
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer
   INCLUDES = -I../deps/ace/include

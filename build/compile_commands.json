@@ -1,241 +1,241 @@
 [
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer -o CMakeFiles/AmigaAceplay.dir/main.c.obj   -c /home/nzjeux/local/AmigaACEPlay/main.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer -o CMakeFiles/AmigaAceplay.dir/main.c.obj   -c /home/nzjeux/local/AmigaACEPlay/main.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/main.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/blit.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/blit.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/blit.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/bob.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/bob.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/bob.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/copper.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/copper.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/copper.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/game.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/game.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/game.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/joy.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/joy.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/joy.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/key.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/key.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/key.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/log.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/log.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/log.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/memory.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/memory.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/memory.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/mouse.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/mouse.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/mouse.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/ptplayer.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/ptplayer.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/ptplayer.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/rand.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/rand.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/rand.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/sprite.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/sprite.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/sprite.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/state.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/state.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/state.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/system.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/system.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/system.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/timer.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/timer.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/timer.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/camera.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/camera.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/camera.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/scrollbuffer.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/scrollbuffer.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/scrollbuffer.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/simplebuffer.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/simplebuffer.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/simplebuffer.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/tilebuffer.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/tilebuffer.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/tilebuffer.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bitmap.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bitmap.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bitmap.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bmframe.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bmframe.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bmframe.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/chunky.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/chunky.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/chunky.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/custom.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/custom.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/custom.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/dir.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/dir.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/dir.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/extview.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/extview.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/extview.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/file.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/file.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/file.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/font.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/font.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/font.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/palette.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/palette.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/palette.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/sprite.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/sprite.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/sprite.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/string.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/string.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/string.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/tag.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/tag.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/tag.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_exp.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_exp.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_exp.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_sqrt.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_sqrt.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_sqrt.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_str.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_str.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_str.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_trig.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_trig.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_trig.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fract32.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fract32.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fract32.c"
 },
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/uint32.c",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/uint32.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/uint32.c"
 }
 ]

@@ -53,6 +53,10 @@
 			[
 				{
 					"backtrace" : 2,
+					"define" : "ACE_DEBUG"
+				},
+				{
+					"backtrace" : 2,
 					"define" : "AMIGA"
 				}
 			],
@@ -70,7 +74,7 @@
 			],
 			"sysroot" : 
 			{
-				"path" : "/home/nzjeux/local/amiga"
+				"path" : "/home/nzjeux/local/amiga-gcc"
 			}
 		}
 	],
@@ -90,14 +94,14 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-ldebug",
+				"fragment" : "",
 				"role" : "flags"
 			}
 		],
 		"language" : "C",
 		"sysroot" : 
 		{
-			"path" : "/home/nzjeux/local/amiga"
+			"path" : "/home/nzjeux/local/amiga-gcc"
 		}
 	},
 	"name" : "AmigaAceplay",

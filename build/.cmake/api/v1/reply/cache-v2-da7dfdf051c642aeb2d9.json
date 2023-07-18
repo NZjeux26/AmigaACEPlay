@@ -23,7 +23,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "ON"
+			"value" : "TRUE"
 		},
 		{
 			"name" : "ACE_DEBUG",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "OFF"
+			"value" : "TRUE"
 		},
 		{
 			"name" : "ACE_DEBUG_UAE",
@@ -47,7 +47,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "OFF"
+			"value" : "FALSE"
 		},
 		{
 			"name" : "ACE_LIBRARY_KIND",
@@ -267,7 +267,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -1603,7 +1603,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/nzjeux/local/amiga"
+			"value" : "/home/nzjeux/local/amiga-gcc"
 		},
 		{
 			"name" : "TOOLCHAIN_PREFIX",
