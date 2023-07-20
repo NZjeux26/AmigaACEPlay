@@ -8,4 +8,15 @@ void gameGsCreate(void);
 void gameGsLoop(void);
 void gameGsDestroy(void);
 
+typedef struct obj {//struct for player parameters
+    float x;        //position X
+    float y;        //position Y
+    short w;        //Rectangle width
+    short h;        //Rectangle height
+    float xvel;     //x velocity
+    float yvel;     //y velocity
+    short health;   //health
+    short colour;    
+} obj;
+
 #endif // _GAME_H_

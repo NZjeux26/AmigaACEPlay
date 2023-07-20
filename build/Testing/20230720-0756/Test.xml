@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="AmigaOS-ninja"
-	BuildStamp="20230718-0820-Experimental"
+	BuildStamp="20230720-0756-Experimental"
 	Name="LouisWu"
 	Generator="ctest-3.16.3"
 	CompilerName="/usr/bin/g++"
@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="3901"
 	>
 	<Testing>
-		<StartDateTime>Jul 18 22:07 NZST</StartDateTime>
-		<StartTestTime>1689674865</StartTestTime>
+		<StartDateTime>Jul 20 19:56 NZST</StartDateTime>
+		<StartTestTime>1689839767</StartTestTime>
 		<TestList/>
-		<EndDateTime>Jul 18 22:07 NZST</EndDateTime>
-		<EndTestTime>1689674865</EndTestTime>
+		<EndDateTime>Jul 20 19:56 NZST</EndDateTime>
+		<EndTestTime>1689839767</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

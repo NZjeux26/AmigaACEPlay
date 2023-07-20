@@ -7,6 +7,12 @@
 
 {
   "directory": "/home/nzjeux/local/AmigaACEPlay/build",
+  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer -o CMakeFiles/AmigaAceplay.dir/src/game.c.obj   -c /home/nzjeux/local/AmigaACEPlay/src/game.c",
+  "file": "/home/nzjeux/local/AmigaACEPlay/src/game.c"
+},
+
+{
+  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
   "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c",
   "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c"
 },
