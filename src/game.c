@@ -18,6 +18,7 @@
 #define WALL_COLOR 1
 //-------------------------------------------------------------- NEW STUFF START
 #define PLAYFIELD_HEIGHT (256-32)
+#define PLAYFIELD_WIDTH (256) //not correct  
 #define PADDLE_MAX_POS_Y (PLAYFIELD_HEIGHT - PADDLE_HEIGHT - 1)
 #define PADDLE_MAX_POS_X (PLAYFIELD_WIDTH - PADDLE_WIDTH - 1)
 #define PADDLE_SPEED 4
@@ -32,8 +33,9 @@ static tSimpleBufferManager *s_pMainBuffer;
 //-------------------------------------------------------------- NEW STUFF START
 static UWORD uwPaddleLeftPosY = 0;
 static UWORD uwPaddleRightPosY = 0;
-
-obj player; //player object declaration
+static UWORD uwPlayerPosY = 0; //doesn't need y since we are going L-R-L
+static UWORD uwPlayerPosX = 0;
+g_obj player; //player object declaration
 
 //---------------------------------------------------------------- NEW STUFF END
 
@@ -62,11 +64,13 @@ void gameGsCreate(void) {
     TAG_SIMPLEBUFFER_VPORT, s_pVpMain,
     TAG_SIMPLEBUFFER_BITMAP_FLAGS, BMF_CLEAR,
   TAG_END);
-
+  //palette with VBB set to four i can get 16-colours
   s_pVpScore->pPalette[0] = 0x0000; // First color is also border color 
   s_pVpScore->pPalette[1] = 0x0888; // Gray
   s_pVpScore->pPalette[2] = 0x0800; // Red - not max, a bit dark
   s_pVpScore->pPalette[3] = 0x0008; // Blue - same brightness as red 
+  s_pVpScore->pPalette[4] = 0x0080; // Green - same brightness as blue
+  s_pVpScore->pPalette[5] = 0xFFC0; // Yellow
 
   // Draw line separating score VPort and main VPort, leave one line blank after it
   blitLine(
@@ -76,12 +80,12 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
 
-  obj player; //player object
-  player.x = s_pVpMain->uwWidth / 2;
-  player.y = s_pVpMain->uwHeight / 2;
-  player.w = 5;
-  player.h = 2;
-  player.colour = 199;
+  player; //player object
+  player.x = (s_pVpMain->uwWidth - player.w) / 2;
+  player.y = 190;
+  player.w = 45;
+  player.h = 10;
+  player.colour = 5;
 
   // Draw wall on the bottom of main VPort
   blitRect(
@@ -105,15 +109,22 @@ void gameGsLoop(void) {
 //-------------------------------------------------------------- NEW STUFF START
 
   //undraw player
-  
+  blitRect( //not working jsut getting gibbierish on screen
+    s_pMainBuffer->pBack,
+    uwPlayerPosX, 0,
+    player.w, player.h, 0
+    );
   // Undraw left paddle
   blitRect(
     s_pMainBuffer->pBack, 0, uwPaddleLeftPosY,
     PADDLE_WIDTH, PADDLE_HEIGHT, 0 // color zero is black
   );
 
+  if(keyCheck(KEY_RSHIFT)){
+    uwPlayerPosX = MIN(uwPlayerPosX + PADDLE_SPEED, 256);
+  }
   if(keyCheck(KEY_LSHIFT)){
-    
+    uwPlayerPosX = MAX(uwPlayerPosX - PADDLE_SPEED, 0);
   }
   // Update left paddle position
   if(keyCheck(KEY_S)) {
@@ -136,6 +147,11 @@ void gameGsLoop(void) {
   else if(keyCheck(KEY_UP)) {
     uwPaddleRightPosY = MAX(uwPaddleRightPosY - PADDLE_SPEED, 0);
   }
+    // Draw player
+    blitRect(
+          s_pMainBuffer->pBack, uwPlayerPosX, 0,
+          player.w, player.h, player.colour
+        );
     // Draw left paddle - NEW: uwPaddleLeftPosY
     blitRect(
       s_pMainBuffer->pBack, 0, uwPaddleLeftPosY,
@@ -150,11 +166,11 @@ void gameGsLoop(void) {
 
 //---------------------------------------------------------------- NEW STUFF END
 
-    blitRect( //not working jsut getting gibbierish on screen
-    s_pMainBuffer->pBack,
-    (s_pVpMain->uwWidth - player.w) / 2, 150,
-    player.w, player.h, 1
-    );
+    // blitRect( //not working jsut getting gibbierish on screen
+    // s_pMainBuffer->pBack,
+    // (s_pVpMain->uwWidth - player.w) / 2, player.y,
+    // player.w, player.h, player.colour
+    // );
     // Draw ball
     blitRect(
       s_pMainBuffer->pBack,
