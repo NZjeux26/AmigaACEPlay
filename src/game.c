@@ -158,7 +158,7 @@ void gameGsLoop(void) {
       player.w, player.h, player.colour
   );
 
-  for (int i = 0; i <= BLOCKS; i++) {
+  for (int i = 0; i < BLOCKS; i++) {
     blitRect( 
     s_pMainBuffer->pBack,
     blocks[i].x, blocks[i].y,
@@ -166,7 +166,7 @@ void gameGsLoop(void) {
     );
   }
 
-  for (int s = 0; s <= BLOCKS; s++){
+  for (int s = 0; s < BLOCKS; s++){
   
     if(blocks[s].y > 200){  //if block moves past player <-------------------- Issue seems to be here
       SCORE = SCORE + 100;  //add score
@@ -187,13 +187,8 @@ void gameGsLoop(void) {
       );
 
     }//end of if
-  }
-   // redraw wall on the bottom of main VPort
-    // blitRect(
-    // s_pMainBuffer->pBack,
-    // 0, s_pVpMain->uwHeight - WALL_HEIGHT,
-    // s_pVpMain->uwWidth, WALL_HEIGHT, WALL_COLOR
-    // );
+  }//end of for
+  
   vPortWaitForEnd(s_pVpMain);
   }
 }
