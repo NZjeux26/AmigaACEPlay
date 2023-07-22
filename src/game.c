@@ -4,9 +4,9 @@
 #include <ace/managers/system.h>
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
+#include <time.h>
+#include <stdlib.h>
 
-// Let's make code more readable by giving names to numbers
-// It is a good practice to name constant stuff using uppercase
 #define BALL_WIDTH 8
 #define BALL_COLOR 1
 #define PADDLE_WIDTH 8
@@ -16,13 +16,14 @@
 #define SCORE_COLOR 1
 #define WALL_HEIGHT 1
 #define WALL_COLOR 1
+#define NSTARS 25
+#define MAX_BLOCKS 10 //theoritcal maximum number of blocks
 //-------------------------------------------------------------- NEW STUFF START
 #define PLAYFIELD_HEIGHT (256-32)
-#define PLAYFIELD_WIDTH (256) //not correct  
+#define PLAYFIELD_WIDTH (320) //not correct  
 #define PADDLE_MAX_POS_Y (PLAYFIELD_HEIGHT - PADDLE_HEIGHT - 1)
-#define PADDLE_MAX_POS_X (PLAYFIELD_WIDTH - PADDLE_WIDTH - 1)
+#define PADDLE_MAX_POS_X (PLAYFIELD_WIDTH - player.w - 1)
 #define PADDLE_SPEED 4
-//---------------------------------------------------------------- NEW STUFF END
 
 static tView *s_pView; // View containing all the viewports
 static tVPort *s_pVpScore; // Viewport for score
@@ -30,14 +31,12 @@ static tSimpleBufferManager *s_pScoreBuffer;
 static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
 
-//-------------------------------------------------------------- NEW STUFF START
-static UWORD uwPaddleLeftPosY = 0;
-static UWORD uwPaddleRightPosY = 0;
-static UWORD uwPlayerPosY = 0; //doesn't need y since we are going L-R-L
-static UWORD uwPlayerPosX = 0;
 g_obj player; //player object declaration
+g_obj blocks[MAX_BLOCKS]; //block object declaration
+static g_star stars[NSTARS]; //star object declaration
 
-//---------------------------------------------------------------- NEW STUFF END
+short BLOCKS = 3;
+short SCORE = 0;
 
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
@@ -80,12 +79,24 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
 
+  // int seed = time(NULL);
+  // srand(seed);
+  
   player; //player object
   player.x = (s_pVpMain->uwWidth - player.w) / 2;
   player.y = 190;
   player.w = 45;
   player.h = 10;
   player.colour = 5;
+
+  for(int i = 0; i < BLOCKS; i++) {
+    blocks[i].x = rand() % PLAYFIELD_WIDTH;
+    blocks[i].y = rand() % (PLAYFIELD_HEIGHT - 70);
+    blocks[i].w = rand() % 70;
+    blocks[i].h = rand() % 70;
+    blocks[i].colour = rand() % 5;
+    blocks[i].yvel = (rand()%512+64)/256.0;
+  }
 
   // Draw wall on the bottom of main VPort
   blitRect(
@@ -106,81 +117,84 @@ void gameGsLoop(void) {
     gameExit();
   }
   else {
-//-------------------------------------------------------------- NEW STUFF START
+  //**UNDRAW**
 
   //undraw player
-  blitRect( //not working jsut getting gibbierish on screen
+  blitRect( 
     s_pMainBuffer->pBack,
-    uwPlayerPosX, 0,
+    player.x, player.y,
     player.w, player.h, 0
     );
-  // Undraw left paddle
+
+  //undraw stars
+  //undraw rectangles
+  for (int i = 0; i < BLOCKS; i++) {
+    blitRect( 
+    s_pMainBuffer->pBack,
+    blocks[i].x, blocks[i].y,
+    blocks[i].w, blocks[i].h, 0
+    );
+  }
+
+  //**Move things down**
+
+  //move blocks down
+  for (int s = 0; s < BLOCKS; s++){
+    short y = blocks[s].y += blocks[s].yvel;
+  }
+
+  if(keyCheck(KEY_D)){  //move player right
+    player.x = MIN(player.x + PADDLE_SPEED, 275);
+  }
+  if(keyCheck(KEY_A)){  //move player left
+    player.x = MAX(player.x - PADDLE_SPEED, 0);
+  }
+
+  //**Draw things**
+
+ // Redraw the player at new position
   blitRect(
-    s_pMainBuffer->pBack, 0, uwPaddleLeftPosY,
-    PADDLE_WIDTH, PADDLE_HEIGHT, 0 // color zero is black
+    s_pMainBuffer->pBack, player.x, player.y,
+      player.w, player.h, player.colour
   );
 
-  if(keyCheck(KEY_RSHIFT)){
-    uwPlayerPosX = MIN(uwPlayerPosX + PADDLE_SPEED, 256);
-  }
-  if(keyCheck(KEY_LSHIFT)){
-    uwPlayerPosX = MAX(uwPlayerPosX - PADDLE_SPEED, 0);
-  }
-  // Update left paddle position
-  if(keyCheck(KEY_S)) {
-    uwPaddleLeftPosY = MIN(uwPaddleLeftPosY + PADDLE_SPEED, PADDLE_MAX_POS_Y);
-  }
-  else if(keyCheck(KEY_W)) {
-    uwPaddleLeftPosY = MAX(uwPaddleLeftPosY - PADDLE_SPEED, 0);
-  }
-
-  // Undraw right paddle
-  blitRect(
-    s_pMainBuffer->pBack, s_pVpMain->uwWidth - PADDLE_WIDTH, uwPaddleRightPosY,
-    PADDLE_WIDTH, PADDLE_HEIGHT, 0 // color zero is black
-  );
-
-  // Update right paddle position
-  if(keyCheck(KEY_DOWN)) {
-    uwPaddleRightPosY = MIN(uwPaddleRightPosY + PADDLE_SPEED, PADDLE_MAX_POS_Y);
-  }
-  else if(keyCheck(KEY_UP)) {
-    uwPaddleRightPosY = MAX(uwPaddleRightPosY - PADDLE_SPEED, 0);
-  }
-    // Draw player
-    blitRect(
-          s_pMainBuffer->pBack, uwPlayerPosX, 0,
-          player.w, player.h, player.colour
-        );
-    // Draw left paddle - NEW: uwPaddleLeftPosY
-    blitRect(
-      s_pMainBuffer->pBack, 0, uwPaddleLeftPosY,
-      PADDLE_WIDTH, PADDLE_HEIGHT, PADDLE_LEFT_COLOR
+  for (int i = 0; i < BLOCKS; i++) {
+    blitRect( 
+    s_pMainBuffer->pBack,
+    blocks[i].x, blocks[i].y,
+    blocks[i].w, blocks[i].h, blocks[i].colour
     );
+  }
 
-    // Draw right paddle - NEW: uwPaddleRightPosY
-    blitRect(
-      s_pMainBuffer->pBack, s_pVpMain->uwWidth - PADDLE_WIDTH, uwPaddleRightPosY,
-      PADDLE_WIDTH, PADDLE_HEIGHT, PADDLE_RIGHT_COLOR
-    );
+  for (int s = 0; s < BLOCKS; s++){
+  
+    if(blocks[s].y > 210){  //if block moves past player
+      SCORE = SCORE + 100;  //add score
 
-//---------------------------------------------------------------- NEW STUFF END
-
-    // blitRect( //not working jsut getting gibbierish on screen
-    // s_pMainBuffer->pBack,
-    // (s_pVpMain->uwWidth - player.w) / 2, player.y,
-    // player.w, player.h, player.colour
-    // );
-    // Draw ball
-    blitRect(
+      blitRect(             //remove
       s_pMainBuffer->pBack,
-      // x center: half of screen width minus half of ball
-      (s_pVpMain->uwWidth - BALL_WIDTH) / 2,
-      // y center: half of screen height minus half of ball
-      (s_pVpMain->uwHeight - BALL_WIDTH) / 2,
-      BALL_WIDTH, BALL_WIDTH, BALL_COLOR
-    );
-    vPortWaitForEnd(s_pVpMain);
+      blocks[s].x, blocks[s].y,
+      blocks[s].w, blocks[s].h, 0
+      );
+                            //change position
+      blocks[s].x = rand() % PLAYFIELD_WIDTH;
+      blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 50); //mgiht be an issue with ghosting
+      
+      blitRect(             //redraw
+      s_pMainBuffer->pBack,
+      blocks[s].x, blocks[s].y,
+      blocks[s].w, blocks[s].h, blocks[s].colour
+      );
+
+      // redraw wall on the bottom of main VPort
+      blitRect(
+      s_pMainBuffer->pBack,
+      0, s_pVpMain->uwHeight - WALL_HEIGHT,
+      s_pVpMain->uwWidth, WALL_HEIGHT, WALL_COLOR
+      );
+    }//end of if
+  }
+  vPortWaitForEnd(s_pVpMain);
   }
 }
 
