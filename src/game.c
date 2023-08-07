@@ -79,8 +79,8 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
 
-  // int seed = time(NULL);
-  // srand(seed);
+   int seed = time(NULL);
+   srand(seed);
   
   player; //player object
   player.x = (s_pVpMain->uwWidth - player.w) / 2;
@@ -89,12 +89,12 @@ void gameGsCreate(void) {
   player.h = 10;
   player.colour = 5;
 
-  for(int i = 0; i < BLOCKS; i++) {
+  for(int i = 0; i < BLOCKS; i++) { //create the blocks
     blocks[i].x = rand() % PLAYFIELD_WIDTH;
-    blocks[i].y = rand() % (PLAYFIELD_HEIGHT - 70);
-    blocks[i].w = rand() % 70;
-    blocks[i].h = rand() % 70;
-    blocks[i].colour = rand() % 5;
+    blocks[i].y = rand() % (PLAYFIELD_HEIGHT - 90);
+    blocks[i].w = rand() % 55;
+    blocks[i].h = rand() % 25;
+    blocks[i].colour = (rand() % 5) + 1;  //cannot have black as an option!
     blocks[i].yvel = (rand()%512+64)/256.0;
   }
 
@@ -117,7 +117,6 @@ void gameGsLoop(void) {
     gameExit();
   }
   else {
-  //**UNDRAW**
 
   //undraw player
   blitRect( 
@@ -126,7 +125,6 @@ void gameGsLoop(void) {
     player.w, player.h, 0
     );
 
-  //undraw stars
   //undraw rectangles
   for (int i = 0; i < BLOCKS; i++) {
     blitRect( 
@@ -138,9 +136,18 @@ void gameGsLoop(void) {
 
   //**Move things down**
 
-  //move blocks down
-  for (int s = 0; s < BLOCKS; s++){         //only one block is actually moving
-    short y = blocks[s].y += blocks[s].yvel;
+  //move blocks down **Third block doesn't move?
+  for (int s = 0; s < BLOCKS; s++){ //only one block is actually moving I had a indpendant action of rebliting the blocks but took that out and seems fine
+      if(blocks[s].y > 195){  //if block moves past player 
+      //SCORE = SCORE + 100;  //add score
+      //change position
+      blocks[s].x = rand() % PLAYFIELD_WIDTH;
+      blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 110);
+
+    }//end of if
+    else {
+      short y = blocks[s].y += blocks[s].yvel;
+    }
   }
 
   if(keyCheck(KEY_D)){  //move player right
@@ -165,29 +172,6 @@ void gameGsLoop(void) {
     blocks[i].w, blocks[i].h, blocks[i].colour
     );
   }
-
-  for (int s = 0; s < BLOCKS; s++){
-  
-    if(blocks[s].y > 200){  //if block moves past player <-------------------- Issue seems to be here
-      SCORE = SCORE + 100;  //add score
-
-      blitRect(             //remove
-      s_pMainBuffer->pBack,
-      blocks[s].x, blocks[s].y,
-      blocks[s].w, blocks[s].h, 0
-      );
-                            //change position
-      blocks[s].x = rand() % PLAYFIELD_WIDTH;
-      blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 50); //mgiht be an issue with ghosting
-      
-      blitRect(             //redraw
-      s_pMainBuffer->pBack,
-      blocks[s].x, blocks[s].y,
-      blocks[s].w, blocks[s].h, blocks[s].colour
-      );
-
-    }//end of if
-  }//end of for
   
   vPortWaitForEnd(s_pVpMain);
   }
