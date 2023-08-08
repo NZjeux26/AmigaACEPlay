@@ -19,6 +19,7 @@
 #define NSTARS 25
 #define MAX_BLOCKS 10 //theoritcal maximum number of blocks
 //-------------------------------------------------------------- NEW STUFF START
+//AMiga Pal 320x256
 #define PLAYFIELD_HEIGHT (256-32)
 #define PLAYFIELD_WIDTH (320) //not correct  
 #define PADDLE_MAX_POS_Y (PLAYFIELD_HEIGHT - PADDLE_HEIGHT - 1)
@@ -37,6 +38,8 @@ static g_star stars[NSTARS]; //star object declaration
 
 short BLOCKS = 3;
 short SCORE = 0;
+
+
 
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
@@ -117,7 +120,7 @@ void gameGsLoop(void) {
     gameExit();
   }
   else {
-
+  logWrite("testing");
   //undraw player
   blitRect( 
     s_pMainBuffer->pBack,
@@ -141,7 +144,7 @@ void gameGsLoop(void) {
       if(blocks[s].y > 195){  //if block moves past player 
       //SCORE = SCORE + 100;  //add score
       //change position
-      blocks[s].x = rand() % PLAYFIELD_WIDTH;
+      blocks[s].x = rand() % PLAYFIELD_WIDTH;//seems to be sometimes this produces a number out of bounds
       blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 110);
 
     }//end of if
