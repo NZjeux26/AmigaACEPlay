@@ -11,8 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
-			"add_definitions"
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -26,19 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 9,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 12,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 7,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -59,7 +52,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"define" : "ACE_DEBUG"
 				},
 				{
@@ -102,7 +95,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-ldebug",
+				"fragment" : "",
 				"role" : "flags"
 			}
 		],

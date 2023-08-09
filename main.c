@@ -12,7 +12,6 @@ tState *g_pGameState = 0;
 
 void genericCreate(void) {
   // Here goes your startup code
-  logWrite("Hello, Amiga!\n");
   keyCreate(); // We'll use keyboard
   // Initialize gamestate
   g_pGameStateManager = stateManagerCreate();

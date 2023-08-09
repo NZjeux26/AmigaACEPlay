@@ -36,7 +36,7 @@ g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
 static g_star stars[NSTARS]; //star object declaration
 
-short BLOCKS = 3;
+short BLOCKS = 8;
 short SCORE = 0;
 
 
@@ -93,10 +93,10 @@ void gameGsCreate(void) {
   player.colour = 5;
 
   for(int i = 0; i < BLOCKS; i++) { //create the blocks
-    blocks[i].x = rand() % PLAYFIELD_WIDTH;
-    blocks[i].y = rand() % (PLAYFIELD_HEIGHT - 90);
     blocks[i].w = rand() % 55;
     blocks[i].h = rand() % 25;
+    blocks[i].x = rand() % (PLAYFIELD_WIDTH - blocks[i].w - 1);// take the screen width minus the block width -1 to ensure it is withing the playfield.
+    blocks[i].y = rand() % (PLAYFIELD_HEIGHT - 90);
     blocks[i].colour = (rand() % 5) + 1;  //cannot have black as an option!
     blocks[i].yvel = (rand()%512+64)/256.0;
   }
@@ -120,7 +120,6 @@ void gameGsLoop(void) {
     gameExit();
   }
   else {
-  logWrite("testing");
   //undraw player
   blitRect( 
     s_pMainBuffer->pBack,
@@ -144,9 +143,8 @@ void gameGsLoop(void) {
       if(blocks[s].y > 195){  //if block moves past player 
       //SCORE = SCORE + 100;  //add score
       //change position
-      blocks[s].x = rand() % PLAYFIELD_WIDTH;//seems to be sometimes this produces a number out of bounds
+      blocks[s].x = rand() % (PLAYFIELD_WIDTH - blocks[s].w - 1);
       blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 110);
-
     }//end of if
     else {
       short y = blocks[s].y += blocks[s].yvel;
