@@ -20,8 +20,8 @@
 #define MAX_BLOCKS 10 //theoritcal maximum number of blocks
 //-------------------------------------------------------------- NEW STUFF START
 //AMiga Pal 320x256
-#define PLAYFIELD_HEIGHT (256-32)
-#define PLAYFIELD_WIDTH (320) //not correct  
+#define PLAYFIELD_HEIGHT (256-32) //32 for the top viewport height
+#define PLAYFIELD_WIDTH (320)
 #define PADDLE_MAX_POS_Y (PLAYFIELD_HEIGHT - PADDLE_HEIGHT - 1)
 #define PADDLE_MAX_POS_X (PLAYFIELD_WIDTH - player.w - 1)
 #define PADDLE_SPEED 4
@@ -36,10 +36,8 @@ g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
 static g_star stars[NSTARS]; //star object declaration
 
-short BLOCKS = 8;
+short BLOCKS = 3;
 short SCORE = 0;
-
-
 
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
@@ -86,7 +84,7 @@ void gameGsCreate(void) {
    srand(seed);
   
   player; //player object
-  player.x = (s_pVpMain->uwWidth - player.w) / 2;
+  player.x = (s_pVpMain->uwWidth - player.w) / 2; //place the player in the centre of the screen
   player.y = 190;
   player.w = 45;
   player.h = 10;
@@ -135,20 +133,25 @@ void gameGsLoop(void) {
     blocks[i].w, blocks[i].h, 0
     );
   }
-
   //**Move things down**
 
   //move blocks down **Third block doesn't move?
-  for (int s = 0; s < BLOCKS; s++){ //only one block is actually moving I had a indpendant action of rebliting the blocks but took that out and seems fine
+  for (int s = 0; s < BLOCKS; s++){ //Sometimes all blocks move, some compiles only one or only two move
       if(blocks[s].y > 195){  //if block moves past player 
       //SCORE = SCORE + 100;  //add score
       //change position
       blocks[s].x = rand() % (PLAYFIELD_WIDTH - blocks[s].w - 1);
       blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 110);
-    }//end of if
-    else {
-      short y = blocks[s].y += blocks[s].yvel;
-    }
+      }//end of if
+    
+      else if((blocks[s].y+blocks[s].h/2) > player.y && (blocks[s].x > player.x) && (blocks[s].x < player.x + player.w) && (blocks[s].y-blocks[s].h/2) < player.y){
+        gameExit();
+      }//same issues as the OG code where blocks are not detecting collisions
+      
+      else {//move the block
+        //short y = blocks[s].y += blocks[s].yvel;
+        blocks[s].y += blocks[s].yvel; //this seems to be better and moves all BLOCKS ** still isn't
+      }
   }
 
   if(keyCheck(KEY_D)){  //move player right
@@ -166,11 +169,11 @@ void gameGsLoop(void) {
       player.w, player.h, player.colour
   );
 
-  for (int i = 0; i < BLOCKS; i++) {
+  for (int y = 0; y < BLOCKS; y++) {
     blitRect( 
     s_pMainBuffer->pBack,
-    blocks[i].x, blocks[i].y,
-    blocks[i].w, blocks[i].h, blocks[i].colour
+    blocks[y].x, blocks[y].y,
+    blocks[y].w, blocks[y].h, blocks[y].colour
     );
   }
   
