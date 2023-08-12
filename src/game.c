@@ -5,6 +5,7 @@
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
 #include <time.h>
+#include <stdbool.h>
 #include <stdlib.h>
 
 #define BALL_WIDTH 8
@@ -16,7 +17,6 @@
 #define SCORE_COLOR 1
 #define WALL_HEIGHT 1
 #define WALL_COLOR 1
-#define NSTARS 25
 #define MAX_BLOCKS 10 //theoritcal maximum number of blocks
 //-------------------------------------------------------------- NEW STUFF START
 //AMiga Pal 320x256
@@ -34,10 +34,9 @@ static tSimpleBufferManager *s_pMainBuffer;
 
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
-static g_star stars[NSTARS]; //star object declaration
-
-short BLOCKS = 3;
+ 
 short SCORE = 0;
+static time_t startTime;
 
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
@@ -80,8 +79,9 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
 
-   int seed = time(NULL);
-   srand(seed);
+  int seed = time(NULL);
+  srand(seed);
+  startTime = time(NULL);
   
   player; //player object
   player.x = (s_pVpMain->uwWidth - player.w) / 2; //place the player in the centre of the screen
@@ -90,13 +90,13 @@ void gameGsCreate(void) {
   player.h = 10;
   player.colour = 5;
 
-  for(int i = 0; i < BLOCKS; i++) { //create the blocks
+  for(int i = 0; i < MAX_BLOCKS; i++) { //create the blocks
     blocks[i].w = rand() % 55;
     blocks[i].h = rand() % 25;
     blocks[i].x = rand() % (PLAYFIELD_WIDTH - blocks[i].w - 1);// take the screen width minus the block width -1 to ensure it is withing the playfield.
     blocks[i].y = rand() % (PLAYFIELD_HEIGHT - 90);
     blocks[i].colour = (rand() % 5) + 1;  //cannot have black as an option!
-    blocks[i].yvel = (rand()%512+64)/256.0;
+    blocks[i].yvel = (rand() % 3) + 1; //previous calculation relied on floats which A500 doesn't have nativly.
   }
 
   // Draw wall on the bottom of main VPort
@@ -107,17 +107,30 @@ void gameGsCreate(void) {
   );
 
   systemUnuse();
-
   // Load the view
   viewLoad(s_pView);
 }
+/*The following is a breakdown of the logic of the collides() function:
 
+The first condition checks if the x-coordinate of the first block is less than the x-coordinate of the second block plus the width of the second block. This ensures that the first block is not to the right of the second block.
+The second condition checks if the x-coordinate of the first block plus the width of the first block is greater than the x-coordinate of the second block. This ensures that the first block is not to the left of the second block.
+The third condition checks if the y-coordinate of the first block is less than the y-coordinate of the second block plus the height of the second block. This ensures that the first block is not above the second block.
+The fourth condition checks if the y-coordinate of the first block plus the height of the first block is greater than the y-coordinate of the second block. This ensures that the first block is not below the second block.
+If all of these conditions are met, then the two blocks collide.*/
+//collision detection function
+bool Collision(g_obj *a, g_obj *b){
+  return (a->x < b->x + b->w && a->x + a->w > b->x && a->y < b->y + b->h && a->y + a->h > b->y);
+}
+
+//need a 2nd block counter first one is the max and the second is the current amount
+short BLOCKS = 3;
 void gameGsLoop(void) {
   // This will loop every frame
   if(keyCheck(KEY_ESCAPE)) {
     gameExit();
   }
   else {
+
   //undraw player
   blitRect( 
     s_pMainBuffer->pBack,
@@ -139,18 +152,18 @@ void gameGsLoop(void) {
   for (int s = 0; s < BLOCKS; s++){ //Sometimes all blocks move, some compiles only one or only two move
       if(blocks[s].y > 195){  //if block moves past player 
       //SCORE = SCORE + 100;  //add score
+     
       //change position
       blocks[s].x = rand() % (PLAYFIELD_WIDTH - blocks[s].w - 1);
       blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 110);
       }//end of if
-    
-      else if((blocks[s].y+blocks[s].h/2) > player.y && (blocks[s].x > player.x) && (blocks[s].x < player.x + player.w) && (blocks[s].y-blocks[s].h/2) < player.y){
-        gameExit();
-      }//same issues as the OG code where blocks are not detecting collisions
       
-      else {//move the block
-        //short y = blocks[s].y += blocks[s].yvel;
-        blocks[s].y += blocks[s].yvel; //this seems to be better and moves all BLOCKS ** still isn't
+      else {//else move blocks
+        blocks[s].y += blocks[s].yvel; 
+      }
+
+      if(Collision(&blocks[s], &player)){//check for collision
+        gameExit();
       }
   }
 
@@ -161,8 +174,12 @@ void gameGsLoop(void) {
     player.x = MAX(player.x - PADDLE_SPEED, 0);
   }
 
-  //**Draw things**
-
+ //**Draw things**
+  time_t currentTime = time(&currentTime);  //gets the current time and if 15 has past add another block
+  if(currentTime - startTime >= 15){
+    BLOCKS++;
+    startTime = currentTime;
+  }
  // Redraw the player at new position
   blitRect(
     s_pMainBuffer->pBack, player.x, player.y,
@@ -176,14 +193,13 @@ void gameGsLoop(void) {
     blocks[y].w, blocks[y].h, blocks[y].colour
     );
   }
-  
+
   vPortWaitForEnd(s_pVpMain);
   }
 }
 
 void gameGsDestroy(void) {
   systemUse();
-
   // This will also destroy all associated viewports and viewport managers
   viewDestroy(s_pView);
 }
