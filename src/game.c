@@ -4,6 +4,7 @@
 #include <ace/managers/system.h>
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
+#include <ace/utils/font.h>
 #include <time.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -31,18 +32,19 @@ static tVPort *s_pVpScore; // Viewport for score
 static tSimpleBufferManager *s_pScoreBuffer;
 static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
-
+//tFont *fallfont;
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
  
 short SCORE = 0;
 static time_t startTime;
 
+
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
     TAG_VIEW_GLOBAL_PALETTE, 1,
   TAG_END);
-
+  
   // Viewport for score bar - on top of screen
   s_pVpScore = vPortCreate(0,
     TAG_VPORT_VIEW, s_pView,
@@ -78,11 +80,15 @@ void gameGsCreate(void) {
     s_pVpScore->uwWidth - 1, s_pVpScore->uwHeight - 2,
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
+  
+  tFont *fallfont = fontCreate("myacefont.fnt");//create font
+  tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfont, "hello Amiga");
+  fontDrawTextBitMap(s_pMainBuffer->pBack, textbitmap, 80,80, 4,FONT_COOKIE);
 
   int seed = time(NULL);
   srand(seed);
   startTime = time(NULL);
-  
+
   player; //player object
   player.x = (s_pVpMain->uwWidth - player.w) / 2; //place the player in the centre of the screen
   player.y = 190;
@@ -130,7 +136,7 @@ void gameGsLoop(void) {
     gameExit();
   }
   else {
-
+  
   //undraw player
   blitRect( 
     s_pMainBuffer->pBack,
@@ -163,7 +169,7 @@ void gameGsLoop(void) {
       }
 
       if(Collision(&blocks[s], &player)){//check for collision
-        gameExit();
+        //gameExit();
       }
   }
 
@@ -202,4 +208,5 @@ void gameGsDestroy(void) {
   systemUse();
   // This will also destroy all associated viewports and viewport managers
   viewDestroy(s_pView);
+ // fontDestroy(fallfont);//kill font
 }
