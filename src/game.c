@@ -81,7 +81,7 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
   
-  tFont *fallfontsmall = fontCreate("mytopazacefont.fnt");//create font
+  tFont *fallfontsmall = fontCreate("myacefont.fnt");//create font
   tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "hello Amiga");
   fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 0,0, 4, FONT_COOKIE);
 

@@ -80,3 +80,5 @@
 1	295	1692090824017379600	ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj	54fcf1cc43287956
 5	323	1692090824044461600	ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj	d143d8e09da26635
 323	521	1692090824238511200	AmigaAceplay	841aea163628450e
+1	79	1692091535392040900	CMakeFiles/AmigaAceplay.dir/src/game.c.obj	b29a5419ca26d579
+79	135	1692091535444805900	AmigaAceplay	841aea163628450e
