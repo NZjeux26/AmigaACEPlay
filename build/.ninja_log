@@ -76,3 +76,7 @@
 72	128	1692089427551713300	AmigaAceplay	841aea163628450e
 1	79	1692090255872720100	CMakeFiles/AmigaAceplay.dir/src/game.c.obj	b29a5419ca26d579
 79	137	1692090255927288700	AmigaAceplay	841aea163628450e
+3	295	1692090824016378800	ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj	b3b66890d3db9310
+1	295	1692090824017379600	ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj	54fcf1cc43287956
+5	323	1692090824044461600	ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj	d143d8e09da26635
+323	521	1692090824238511200	AmigaAceplay	841aea163628450e
