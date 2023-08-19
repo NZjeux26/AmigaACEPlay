@@ -32,7 +32,7 @@ static tVPort *s_pVpScore; // Viewport for score
 static tSimpleBufferManager *s_pScoreBuffer;
 static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
-//tFont *fallfont;
+tFont *fallfontsmall;
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
  
@@ -81,7 +81,7 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
   
-  tFont *fallfontsmall = fontCreate("myacefont.fnt");//create font
+  fallfontsmall = fontCreate("myacefont.fnt");//create font
   tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "hello Amiga");
   fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 0,0, 4, FONT_COOKIE);
 
