@@ -5,6 +5,7 @@
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
 #include <ace/utils/font.h>
+#include <ace/utils/string.h>
 #include <time.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -34,12 +35,13 @@ static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
 tFont *fallfontsmall;
 tTextBitMap *scoretextbitmap;
+char scorebuffer[20];
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
 short scoreSize;
-char score[120];
-short SCORE = 0;
+short gSCORE = 0;
 static time_t startTime;
+bool g_scored = false;
 
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
@@ -82,11 +84,13 @@ void gameGsCreate(void) {
     s_pVpScore->uwWidth - 1, s_pVpScore->uwHeight - 2,
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
-  
+  gSCORE = 0;
   fallfontsmall = fontCreate("myacefont.fnt");//create font
   tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "Score: ");
   fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 5,20, 6, FONT_COOKIE);
   
+  stringDecimalFromULong(gSCORE, scorebuffer);
+  scoretextbitmap = fontCreateTextBitMapFromStr(fallfontsmall, scorebuffer); //redo bitmap
   
   int seed = time(NULL);
   srand(seed);
@@ -132,7 +136,7 @@ bool Collision(g_obj *a, g_obj *b){
 }
 
 //need a 2nd block counter first one is the max and the second is the current amount
-short BLOCKS = 1;
+short BLOCKS = 2;
 void gameGsLoop(void) {
   // This will loop every frame
   if(keyCheck(KEY_ESCAPE)) {
@@ -161,7 +165,7 @@ void gameGsLoop(void) {
   for (int s = 0; s < BLOCKS; s++){ 
       if(blocks[s].y > 195){  //if block moves past player 
       //add and draw scoreboard * very slow currently
-      updateScore(); //moved into function for code clarity
+      g_scored = true;
       
       //change position
       blocks[s].x = rand() % (PLAYFIELD_WIDTH - blocks[s].w - 1);
@@ -204,9 +208,13 @@ void gameGsLoop(void) {
     );
   }
   
-
+  if (g_scored){
+    g_scored = false;
+    updateScore(); //moved into function for code clarity
+  }
   vPortWaitForEnd(s_pVpMain);
   }
+ 
 }
 
 void gameGsDestroy(void) {
@@ -216,10 +224,20 @@ void gameGsDestroy(void) {
  // fontDestroy(fallfont);//kill font
 }
 
-void updateScore(void){
-    SCORE = SCORE + 100;  //add score
-    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 0, FONT_COOKIE); //clear old text
-    sprintf(score, "%d", SCORE);//convert score to string
-    scoretextbitmap = fontCreateTextBitMapFromStr(fallfontsmall, score); //redo bitmap  
-    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE); //draw new text
+void updateScore(void) {
+    gSCORE = gSCORE + 100;  //add score
+    stringDecimalFromULong(gSCORE, scorebuffer);
+    fontFillTextBitMap(fallfontsmall, scoretextbitmap, scorebuffer);
+    
+    //erase scorebuffer
+    blitRect(s_pScoreBuffer->pBack, 45, 20, scoretextbitmap->uwActualWidth, scoretextbitmap->uwActualHeight, 0);
+    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE);
 }
+
+// void updateScore(void){
+//     gSCORE = gSCORE + 100;  //add score
+//     fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 0, FONT_COOKIE); //clear old text
+//     stringDecimalFromULong(gSCORE, scorebuffer);
+//     scoretextbitmap = fontCreateTextBitMapFromStr(fallfontsmall, scorebuffer); //redo bitmap  
+//     fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE); //draw new text
+// }
