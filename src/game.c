@@ -33,12 +33,13 @@ static tSimpleBufferManager *s_pScoreBuffer;
 static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
 tFont *fallfontsmall;
+tTextBitMap *scoretextbitmap;
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
- 
+short scoreSize;
+char score[120];
 short SCORE = 0;
 static time_t startTime;
-
 
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
@@ -72,6 +73,7 @@ void gameGsCreate(void) {
   s_pVpScore->pPalette[3] = 0x0008; // Blue - same brightness as red 
   s_pVpScore->pPalette[4] = 0x0080; // Green - same brightness as blue
   s_pVpScore->pPalette[5] = 0xFFC0; // Yellow
+  s_pVpScore->pPalette[6] = 0xFFFF; // white
 
   // Draw line separating score VPort and main VPort, leave one line blank after it
   blitLine(
@@ -82,9 +84,10 @@ void gameGsCreate(void) {
   );
   
   fallfontsmall = fontCreate("myacefont.fnt");//create font
-  tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "hello Amiga");
-  fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 0,0, 4, FONT_COOKIE);
-
+  tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "Score: ");
+  fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 5,20, 6, FONT_COOKIE);
+  
+  
   int seed = time(NULL);
   srand(seed);
   startTime = time(NULL);
@@ -129,7 +132,7 @@ bool Collision(g_obj *a, g_obj *b){
 }
 
 //need a 2nd block counter first one is the max and the second is the current amount
-short BLOCKS = 3;
+short BLOCKS = 1;
 void gameGsLoop(void) {
   // This will loop every frame
   if(keyCheck(KEY_ESCAPE)) {
@@ -154,11 +157,12 @@ void gameGsLoop(void) {
   }
   //**Move things down**
 
-  //move blocks down **Third block doesn't move?
-  for (int s = 0; s < BLOCKS; s++){ //Sometimes all blocks move, some compiles only one or only two move
+  //move blocks down
+  for (int s = 0; s < BLOCKS; s++){ 
       if(blocks[s].y > 195){  //if block moves past player 
-      //SCORE = SCORE + 100;  //add score
-     
+      //add and draw scoreboard * very slow currently
+      updateScore(); //moved into function for code clarity
+      
       //change position
       blocks[s].x = rand() % (PLAYFIELD_WIDTH - blocks[s].w - 1);
       blocks[s].y = rand() % (PLAYFIELD_HEIGHT - 110);
@@ -199,6 +203,7 @@ void gameGsLoop(void) {
     blocks[y].w, blocks[y].h, blocks[y].colour
     );
   }
+  
 
   vPortWaitForEnd(s_pVpMain);
   }
@@ -209,4 +214,12 @@ void gameGsDestroy(void) {
   // This will also destroy all associated viewports and viewport managers
   viewDestroy(s_pView);
  // fontDestroy(fallfont);//kill font
+}
+
+void updateScore(void){
+    SCORE = SCORE + 100;  //add score
+    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 0, FONT_COOKIE); //clear old text
+    sprintf(score, "%d", SCORE);//convert score to string
+    scoretextbitmap = fontCreateTextBitMapFromStr(fallfontsmall, score); //redo bitmap  
+    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE); //draw new text
 }
