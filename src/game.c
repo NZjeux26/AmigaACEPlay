@@ -4,6 +4,7 @@
 #include <ace/managers/system.h>
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
+#include <ace/utils/file.h>
 #include <ace/utils/font.h>
 #include <ace/utils/string.h>
 #include <time.h>
@@ -164,8 +165,7 @@ void gameGsLoop(void) {
   //move blocks down
   for (int s = 0; s < BLOCKS; s++){ 
       if(blocks[s].y > 195){  //if block moves past player 
-      //add and draw scoreboard * very slow currently
-      g_scored = true;
+      g_scored = true;//the player has scored for this frame.
       
       //change position
       blocks[s].x = rand() % (PLAYFIELD_WIDTH - blocks[s].w - 1);
@@ -177,7 +177,8 @@ void gameGsLoop(void) {
       }
 
       if(Collision(&blocks[s], &player)){//check for collision
-        //gameExit();
+        highScoreCheck();
+        gameExit();
       }
   }
 
@@ -208,7 +209,7 @@ void gameGsLoop(void) {
     );
   }
   
-  if (g_scored){
+  if (g_scored){  //if the player ahs scored, set to false and update the score
     g_scored = false;
     updateScore(); //moved into function for code clarity
   }
@@ -221,23 +222,42 @@ void gameGsDestroy(void) {
   systemUse();
   // This will also destroy all associated viewports and viewport managers
   viewDestroy(s_pView);
- // fontDestroy(fallfont);//kill font
 }
 
-void updateScore(void) {
+void updateScore(void) {  //bug seems to appear where text for 10000 + seems to be erroring with: ERR: Text '10000' doesn't fit in text bitmap, text needs: 33,8, bitmap size: 32,8
     gSCORE = gSCORE + 100;  //add score
     stringDecimalFromULong(gSCORE, scorebuffer);
-    fontFillTextBitMap(fallfontsmall, scoretextbitmap, scorebuffer);
-    
-    //erase scorebuffer
-    blitRect(s_pScoreBuffer->pBack, 45, 20, scoretextbitmap->uwActualWidth, scoretextbitmap->uwActualHeight, 0);
-    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE);
+    blitRect(s_pScoreBuffer->pBack, 45, 20, scoretextbitmap->uwActualWidth, scoretextbitmap->uwActualHeight, 0); //erase scorebuffer
+    fontFillTextBitMap(fallfontsmall, scoretextbitmap, scorebuffer);//refill
+    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE);  //draw
 }
 
-// void updateScore(void){
-//     gSCORE = gSCORE + 100;  //add score
-//     fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 0, FONT_COOKIE); //clear old text
-//     stringDecimalFromULong(gSCORE, scorebuffer);
-//     scoretextbitmap = fontCreateTextBitMapFromStr(fallfontsmall, scorebuffer); //redo bitmap  
-//     fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE); //draw new text
-// }
+void highScoreCheck(void){
+    short score = gSCORE;
+    short scoreText[10];
+    char charScore[30];
+    systemUse();
+    char filename[20] = "scoresheet.txt";
+    
+    if(!fileExists(filename)){  //check if the file exists, if not create and add the score
+        tFile *file = fileOpen(filename, "w");
+        stringDecimalFromULong(score,charScore);
+        fileWriteStr(file, charScore);
+        fileClose(file);
+        //add the score to the file 
+    }
+    else{
+      //read the file intto an array, read the array from last to first checking against the score. 
+      //if the score is > than the current, move up until a place is found
+      //if the score is > score[X] and but less than score[Y] insert 
+    }
+    /*check for file
+      IF NOT EXISTS
+      create
+      add score
+      ELSE
+      read file, 
+      
+    */
+   systemUnuse();
+}
