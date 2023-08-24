@@ -41,6 +41,7 @@ g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
 short scoreSize;
 short gSCORE = 0;
+short g_highScore = 0; //needs to be assigned prior to initialization
 static time_t startTime;
 bool g_scored = false;
 
@@ -224,6 +225,12 @@ void gameGsDestroy(void) {
   viewDestroy(s_pView);
 }
 
+void swap(int *a, int *b){//for bubble sort.
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}//swap
+
 void updateScore(void) {  //bug seems to appear where text for 10000 + seems to be erroring with: ERR: Text '10000' doesn't fit in text bitmap, text needs: 33,8, bitmap size: 32,8
     gSCORE = gSCORE + 100;  //add score
     stringDecimalFromULong(gSCORE, scorebuffer);
@@ -234,7 +241,7 @@ void updateScore(void) {  //bug seems to appear where text for 10000 + seems to 
 
 void highScoreCheck(void){
     short score = gSCORE;
-    short scoreText[10];
+    short scoreText[11]; //set to 11, 0-9 are actual scores and the 11 is used as drop space.
     char charScore[30];
     systemUse();
     char filename[20] = "scoresheet.txt";
@@ -242,22 +249,28 @@ void highScoreCheck(void){
     if(!fileExists(filename)){  //check if the file exists, if not create and add the score
         tFile *file = fileOpen(filename, "w");
         stringDecimalFromULong(score,charScore);
-        fileWriteStr(file, charScore);
+        fileWriteStr(file, charScore);//add the score to the file 
         fileClose(file);
-        //add the score to the file 
+        
     }
     else{
-      //read the file intto an array, read the array from last to first checking against the score. 
-      //if the score is > than the current, move up until a place is found
-      //if the score is > score[X] and but less than score[Y] insert 
+      tFile *file = fileOpen(filename, "r");
+        for (short i = 0; i < 11; i++){
+            if(fileScanf(file, "%d", &scoreText[i]) != 1){
+              break;
+            }
+        }
+        fileClose(file);//now the scoresheet contents are in the array
+        //put the score into the last array spot, bubble sort the array and then write the top ten to the scoresheet and the top spot to the global HS var
+        scoreText[11] = score;
+
     }
-    /*check for file
-      IF NOT EXISTS
-      create
-      add score
-      ELSE
-      read file, 
-      
-    */
    systemUnuse();
 }
+
+void bubbleSort(short s, short t[]){
+   
+
+
+}
+//extra function to write the highscore

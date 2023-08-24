@@ -9,6 +9,8 @@ void gameGsLoop(void);
 void gameGsDestroy(void);
 void updateScore(void);
 void highScoreCheck(void);
+void swap(int *a, int *b);
+void bubbleSort(short s, short a[]); //array size and the array  
 
 typedef struct g_obj {//struct for player parameters
     short x;        //position X
