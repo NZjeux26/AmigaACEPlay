@@ -34,8 +34,8 @@ static tVPort *s_pVpScore; // Viewport for score
 static tSimpleBufferManager *s_pScoreBuffer;
 static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
-tFont *fallfontsmall;
-tTextBitMap *scoretextbitmap;
+tFont *fallfontsmall; //global for font
+tTextBitMap *scoretextbitmap;//global for score text
 char scorebuffer[20];
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
@@ -86,10 +86,15 @@ void gameGsCreate(void) {
     s_pVpScore->uwWidth - 1, s_pVpScore->uwHeight - 2,
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
-  gSCORE = 0;
+  gSCORE = 0; 
+  g_highScore;// add function here to get the highscore from file first.
+  
   fallfontsmall = fontCreate("myacefont.fnt");//create font
+  tTextBitMap *highscorebitmap = fontCreateTextBitMapFromStr(fallfontsmall, "High Score: ");
+  fontDrawTextBitMap(s_pScoreBuffer->pBack, highscorebitmap, 0,10, 6, FONT_COOKIE);
+
   tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "Score: ");
-  fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 5,20, 6, FONT_COOKIE);
+  fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 0,20, 6, FONT_COOKIE);
   
   stringDecimalFromULong(gSCORE, scorebuffer);
   scoretextbitmap = fontCreateTextBitMapFromStr(fallfontsmall, scorebuffer); //redo bitmap
@@ -234,43 +239,129 @@ void swap(int *a, int *b){//for bubble sort.
 void updateScore(void) {  //bug seems to appear where text for 10000 + seems to be erroring with: ERR: Text '10000' doesn't fit in text bitmap, text needs: 33,8, bitmap size: 32,8
     gSCORE = gSCORE + 100;  //add score
     stringDecimalFromULong(gSCORE, scorebuffer);
-    blitRect(s_pScoreBuffer->pBack, 45, 20, scoretextbitmap->uwActualWidth, scoretextbitmap->uwActualHeight, 0); //erase scorebuffer
+    blitRect(s_pScoreBuffer->pBack, 40, 20, scoretextbitmap->uwActualWidth, scoretextbitmap->uwActualHeight, 0); //erase scorebuffer
     fontFillTextBitMap(fallfontsmall, scoretextbitmap, scorebuffer);//refill
-    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 45,20, 6, FONT_COOKIE);  //draw
+    fontDrawTextBitMap(s_pScoreBuffer->pBack, scoretextbitmap, 40,20, 6, FONT_COOKIE);  //draw
 }
 
-void highScoreCheck(void){
-    short score = gSCORE;
-    short scoreText[11]; //set to 11, 0-9 are actual scores and the 11 is used as drop space.
-    char charScore[30];
-    systemUse();
-    char filename[20] = "scoresheet.txt";
+void highScoreCheck(void) {
+  short score = gSCORE;
+  char charScore[30];
+  systemUse();
+  char filename[20] = "scoresheet.txt";
     
-    if(!fileExists(filename)){  //check if the file exists, if not create and add the score
-        tFile *file = fileOpen(filename, "w");
-        stringDecimalFromULong(score,charScore);
-        fileWriteStr(file, charScore);//add the score to the file 
-        fileClose(file);
-        
-    }
-    else{
-      tFile *file = fileOpen(filename, "r");
-        for (short i = 0; i < 11; i++){
-            if(fileScanf(file, "%d", &scoreText[i]) != 1){
-              break;
-            }
-        }
-        fileClose(file);//now the scoresheet contents are in the array
-        //put the score into the last array spot, bubble sort the array and then write the top ten to the scoresheet and the top spot to the global HS var
-        scoreText[11] = score;
+  if(!fileExists(filename)){  //check if the file exists, if not create and add the score
+      tFile *file = fileOpen(filename, "w");
+      stringDecimalFromULong(score,charScore);
+      fileWriteStr(file, charScore);//add the score to the file 
+      fileClose(file); 
+  }
+  else{//if file exsits, read the score chec against the player score, if greater write to file else do nothing
+    tFile *file = fileOpen(filename, "a");
+    char tempscore[10];
+    short tScore;
+    fileRead(file,tempscore,10);//read the score
+    //function to return highest score in the file.
 
+    //tScore = strtol(tempscore, NULL, 10);//convert to short.
+    tScore = getHighScore();
+    logWrite("TScore Is: %d\n", tScore);
+    if(score > tScore){//if score is greater than the current HS then add it to the end.
+      stringDecimalFromULong(score,charScore);
+      fileWriteStr(file, "\n");
+      fileWriteStr(file,charScore);
+      fileClose(file);
     }
-   systemUnuse();
+    else fileClose(file);//else do nothing
+  }
 }
 
-void bubbleSort(short s, short t[]){
-   
+short getHighScore(void){
+  //read the last item in the file and return it as the HS if the file doesn't exist then return Zero
+  char filename[20] = "scoresheet.txt";
 
+  if((!fileExists(filename))) return 0;
+
+  tFile *file = fileOpen(filename, "r");
+  if(!file) return 101; //set to 1 so i know it was a cope out
+
+  char **lines = calloc(10, sizeof(char *));
+  if(!lines){
+    fileClose(file);
+    return 102;
+  }
+  memset(lines,0,sizeof(char*) * 10);
+
+  char tline[512];
+  short x = 0;
+  while(fgets(tline, 512, file)){//issues getting the tokens into the array of lines
+    char *token = strtok(tline, "\n");
+    while(token){
+      logWrite("File Reading: %s\n", token);
+      lines[x] = token;
+      x++;
+      token = strtok(NULL, "\n");
+      if(token == NULL) break;
+    }
+  }
+
+  for(int i = 0; i < x; i++){
+    logWrite("Lines Array: %i\n", lines[i]);
+  }
+  fileClose(file);
+  short s = sizeof(lines);
+  short highScore = (short)lines[s];
+  return highScore;
+
+}
+// void highScoreCheck(void){
+//     short score = gSCORE;
+//     short scoreText[11]; //set to 11, 0-9 are actual scores and the 11 is used as drop space.
+//     char charScore[30];
+//     systemUse();
+//     char filename[20] = "scoresheet.txt";
+    
+//     if(!fileExists(filename)){  //check if the file exists, if not create and add the score
+//         tFile *file = fileOpen(filename, "w");
+//         stringDecimalFromULong(score,charScore);
+//         fileWriteStr(file, charScore);//add the score to the file 
+//         fileClose(file);
+        
+//     }
+//     else{
+//       tFile *file = fileOpen(filename, "r");
+//         for (short i = 0; i < 11; i++){
+//             if(fileScanf(file, "%d", &scoreText[i]) != 1){
+//               break;
+//             }
+//         }
+//         fileClose(file);//now the scoresheet contents are in the array
+//         //put the score into the last array spot, bubble sort the array and then write the top ten to the scoresheet and the top spot to the global HS var
+        
+//         if(score < scoreText[10]){// what happens when there is less than 10 scores?
+//           //do nothing?
+//         }
+//         else{
+//           scoreText[11] = score;
+//           bubbleSort(11, scoreText);
+//         }
+//     }
+//    systemUnuse();
+// }
+//this might not work since the items in the file are chars not shorts. 
+void bubbleSort(short s, short t[]){// s is the size of the array and t is the array
+  bool swapping = true;
+  while(swapping){
+    swapping = false;
+    for (short i = 0; i < s - 1; i++){
+      if(t[i] > t[i + 1]){
+        short temp = t[i];
+        t[i] = t[i + 1];
+        t[i + 1] = temp;
+        swapping = true;
+      }
+    }
+  }
 
 }
 //extra function to write the highscore
