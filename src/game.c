@@ -279,7 +279,7 @@ void highScoreCheck(void) {
 short getHighScore(void){
   //read the last item in the file and return it as the HS if the file doesn't exist then return Zero
   char filename[20] = "scoresheet.txt";
-
+  short highScore = 0;
   if((!fileExists(filename))) return 0;
 
   tFile *file = fileOpen(filename, "r");
@@ -298,8 +298,10 @@ short getHighScore(void){
     char *token = strtok(tline, "\n");
     while(token){
       logWrite("File Reading: %s\n", token);
-      lines[x] = token;
-      x++;
+      short tSize = sizeof(token);//might not be needed since token is already a char but leaving for now.
+      char temp[tSize] = token; 
+      short tScore = strtol(temp, NULL, 10);  //convert to short
+      if(tScore > highScore) highScore = tScore;  //if the read score is > than the HS then overwirte it.
       token = strtok(NULL, "\n");
       if(token == NULL) break;
     }
@@ -309,10 +311,9 @@ short getHighScore(void){
     logWrite("Lines Array: %i\n", lines[i]);
   }
   fileClose(file);
-  short s = sizeof(lines);
-  short highScore = (short)lines[s];
-  return highScore;
-
+ 
+  return highScore; //return the Highest found score.
+  /*In Theory the last int he file should be the highest if this works correctly. This could get resource intensive if a person has hundreds of High scores*/
 }
 // void highScoreCheck(void){
 //     short score = gSCORE;
