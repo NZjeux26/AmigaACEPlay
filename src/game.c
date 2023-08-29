@@ -87,11 +87,16 @@ void gameGsCreate(void) {
     SCORE_COLOR, 0xFFFF, 0 // Try patterns 0xAAAA, 0xEEEE, etc.
   );
   gSCORE = 0; 
-  g_highScore;// add function here to get the highscore from file first.
-  
+  g_highScore = getHighScore();  //get the highscore from the file, returning zero if no file
+  char i_highScore[20]; //buffer string to hold the highscore
+  stringDecimalFromULong(g_highScore, i_highScore); //convert to short
+
   fallfontsmall = fontCreate("myacefont.fnt");//create font
+
   tTextBitMap *highscorebitmap = fontCreateTextBitMapFromStr(fallfontsmall, "High Score: ");
   fontDrawTextBitMap(s_pScoreBuffer->pBack, highscorebitmap, 0,10, 6, FONT_COOKIE);
+  highscorebitmap = fontCreateTextBitMapFromStr(fallfontsmall, i_highScore);  //reuse the bitmap from writing the highscore text  
+  fontDrawTextBitMap(s_pScoreBuffer->pBack, highscorebitmap, 73,10, 6, FONT_COOKIE); //write out the highscore
 
   tTextBitMap *textbitmap = fontCreateTextBitMapFromStr(fallfontsmall, "Score: ");
   fontDrawTextBitMap(s_pScoreBuffer->pBack, textbitmap, 0,20, 6, FONT_COOKIE);
@@ -275,9 +280,8 @@ void highScoreCheck(void) {
     else fileClose(file);//else do nothing
   }
 }
-
+//reads through the scoresheet to find the highest score and returns that to compare it with the current score by the player
 short getHighScore(void){
-  //read the last item in the file and return it as the HS if the file doesn't exist then return Zero
   char filename[20] = "scoresheet.txt";
   short highScore = 0;
   if((!fileExists(filename))) return 0;
@@ -285,70 +289,23 @@ short getHighScore(void){
   tFile *file = fileOpen(filename, "r");
   if(!file) return 101; //set to 1 so i know it was a cope out
 
-  char **lines = calloc(10, sizeof(char *));
-  if(!lines){
-    fileClose(file);
-    return 102;
-  }
-  memset(lines,0,sizeof(char*) * 10);
-
   char tline[512];
-  short x = 0;
   while(fgets(tline, 512, file)){//issues getting the tokens into the array of lines
     char *token = strtok(tline, "\n");
     while(token){
-      logWrite("File Reading: %s\n", token);
-      short tSize = sizeof(token);//might not be needed since token is already a char but leaving for now.
-      char temp[tSize] = token; 
-      short tScore = strtol(temp, NULL, 10);  //convert to short
+      logWrite("File Reading: %s\n", token); 
+      short tScore = strtol(token, NULL, 10);  //convert to short
       if(tScore > highScore) highScore = tScore;  //if the read score is > than the HS then overwirte it.
       token = strtok(NULL, "\n");
       if(token == NULL) break;
     }
-  }
-
-  for(int i = 0; i < x; i++){
-    logWrite("Lines Array: %i\n", lines[i]);
   }
   fileClose(file);
  
   return highScore; //return the Highest found score.
   /*In Theory the last int he file should be the highest if this works correctly. This could get resource intensive if a person has hundreds of High scores*/
 }
-// void highScoreCheck(void){
-//     short score = gSCORE;
-//     short scoreText[11]; //set to 11, 0-9 are actual scores and the 11 is used as drop space.
-//     char charScore[30];
-//     systemUse();
-//     char filename[20] = "scoresheet.txt";
-    
-//     if(!fileExists(filename)){  //check if the file exists, if not create and add the score
-//         tFile *file = fileOpen(filename, "w");
-//         stringDecimalFromULong(score,charScore);
-//         fileWriteStr(file, charScore);//add the score to the file 
-//         fileClose(file);
-        
-//     }
-//     else{
-//       tFile *file = fileOpen(filename, "r");
-//         for (short i = 0; i < 11; i++){
-//             if(fileScanf(file, "%d", &scoreText[i]) != 1){
-//               break;
-//             }
-//         }
-//         fileClose(file);//now the scoresheet contents are in the array
-//         //put the score into the last array spot, bubble sort the array and then write the top ten to the scoresheet and the top spot to the global HS var
-        
-//         if(score < scoreText[10]){// what happens when there is less than 10 scores?
-//           //do nothing?
-//         }
-//         else{
-//           scoreText[11] = score;
-//           bubbleSort(11, scoreText);
-//         }
-//     }
-//    systemUnuse();
-// }
+
 //this might not work since the items in the file are chars not shorts. 
 void bubbleSort(short s, short t[]){// s is the size of the array and t is the array
   bool swapping = true;
