@@ -20,7 +20,7 @@
 #define SCORE_COLOR 1
 #define WALL_HEIGHT 1
 #define WALL_COLOR 1
-#define MAX_BLOCKS 10 //theoritcal maximum number of blocks
+#define MAX_BLOCKS 8 //theoritcal maximum number of blocks
 //-------------------------------------------------------------- NEW STUFF START
 //AMiga Pal 320x256
 #define PLAYFIELD_HEIGHT (256-32) //32 for the top viewport height
@@ -34,14 +34,14 @@ static tVPort *s_pVpScore; // Viewport for score
 static tSimpleBufferManager *s_pScoreBuffer;
 static tVPort *s_pVpMain; // Viewport for playfield
 static tSimpleBufferManager *s_pMainBuffer;
+
 tFont *fallfontsmall; //global for font
 tTextBitMap *scoretextbitmap;//global for score text
 char scorebuffer[20];
 g_obj player; //player object declaration
 g_obj blocks[MAX_BLOCKS]; //block object declaration
-short scoreSize;
-short gSCORE = 0;
-short g_highScore = 0; //needs to be assigned prior to initialization
+int gSCORE = 0;
+int g_highScore = 0; //needs to be assigned prior to initialization
 static time_t startTime;
 bool g_scored = false;
 
@@ -250,7 +250,7 @@ void updateScore(void) {  //bug seems to appear where text for 10000 + seems to 
 }
 
 void highScoreCheck(void) {
-  short score = gSCORE;
+  int score = gSCORE;
   char charScore[30];
   systemUse();
   char filename[20] = "scoresheet.txt";
@@ -283,7 +283,7 @@ void highScoreCheck(void) {
 //reads through the scoresheet to find the highest score and returns that to compare it with the current score by the player
 short getHighScore(void){
   char filename[20] = "scoresheet.txt";
-  short highScore = 0;
+  int highScore = 0;
   if((!fileExists(filename))) return 0;
 
   tFile *file = fileOpen(filename, "r");
@@ -294,7 +294,7 @@ short getHighScore(void){
     char *token = strtok(tline, "\n");
     while(token){
       logWrite("File Reading: %s\n", token); 
-      short tScore = strtol(token, NULL, 10);  //convert to short
+      int tScore = strtol(token, NULL, 10);  //convert to short
       if(tScore > highScore) highScore = tScore;  //if the read score is > than the HS then overwirte it.
       token = strtok(NULL, "\n");
       if(token == NULL) break;
@@ -313,7 +313,7 @@ void bubbleSort(short s, short t[]){// s is the size of the array and t is the a
     swapping = false;
     for (short i = 0; i < s - 1; i++){
       if(t[i] > t[i + 1]){
-        short temp = t[i];
+        int temp = t[i];
         t[i] = t[i + 1];
         t[i + 1] = temp;
         swapping = true;
