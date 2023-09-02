@@ -6,30 +6,34 @@
 #include <ace/managers/state.h>
 // Without it compiler will yell about undeclared gameGsCreate etc
 #include "src/game.h"
+#include "src/menu.h"
+#include "src/states.h"
 
-tStateManager *g_pGameStateManager = 0;
-tState *g_pGameState = 0;
+tStateManager *g_pStateManager;
+tState *g_pGameState;
+tState *g_pMenuState;
 
 void genericCreate(void) {
   // Here goes your startup code
   keyCreate(); // We'll use keyboard
   // Initialize gamestate
-  g_pGameStateManager = stateManagerCreate();
-  g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, 0, 0);
-
-  statePush(g_pGameStateManager, g_pGameState);
+  g_pStateManager = stateManagerCreate();
+  g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, gameGsCreate, g_pGameState);
+  g_pMenuState = stateCreate(menuGsCreate, menuGsLoop, menuGsDestroy, 0, 0, 0);
+  statePush(g_pStateManager, g_pGameState);
 }
 
 void genericProcess(void) {
   // Here goes code done each game frame
   keyProcess();
-  stateProcess(g_pGameStateManager); // Process current gamestate's loop
+  stateProcess(g_pStateManager); // Process current gamestate's loop
 }
 
 void genericDestroy(void) {
   // Here goes your cleanup code
-  stateManagerDestroy(g_pGameStateManager);
+  stateManagerDestroy(g_pStateManager);
   stateDestroy(g_pGameState);
+  stateDestroy(g_pMenuState);//might not be needed
   keyDestroy(); // We don't need it anymore
   logWrite("Goodbye, Amiga!\n");
 }

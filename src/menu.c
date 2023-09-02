@@ -1,9 +1,11 @@
 #include "menu.h"
+#include "states.h"
 #include <ace/managers/key.h>
 #include <ace/managers/game.h>
 #include <ace/managers/system.h>
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
+#include <ace/managers/state.h>
 #include <ace/utils/file.h>
 #include <ace/utils/font.h>
 #include <ace/utils/string.h>
@@ -20,6 +22,13 @@ static tSimpleBufferManager *s_pMainBuffer;
 
 tFont *menufont;    //font
 tTextBitMap *menutextbitmap; //bitmap for the font
+
+tState *g_pMenuState;
+
+// void createMenuState(void){
+//     g_pMenuState = stateCreate(menuGsCreate, menuGsLoop, menuGsDestroy,0,0,0);
+//     statePush(g_pStateManager, g_pMenuState);
+// }
 
 void menuGsCreate(void){
     //create view port and the display buffer for the main viewport
@@ -45,7 +54,9 @@ void menuGsLoop(void){
         gameExit();
     }
     if(keyCheck(KEY_L)){
-        //load into the game state
+        logWrite("Going back to the Game!\n");
+        stateChange(g_pStateManager, g_pGameState);
+        logWrite("Switching!\n");
     }
     vPortWaitForEnd(s_pVpMain);
 }

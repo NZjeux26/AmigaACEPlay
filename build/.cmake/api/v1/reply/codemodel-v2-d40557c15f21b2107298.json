@@ -38,7 +38,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -74,14 +74,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AmigaAceplay::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AmigaAceplay-Release-95a0beeb760671ba0b84.json",
+					"jsonFile" : "target-AmigaAceplay-Debug-a87e7d2495588228cc6a.json",
 					"name" : "AmigaAceplay",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ace::@c3ba06c9fd8ad93ec66a",
-					"jsonFile" : "target-ace-Release-eef876a88e480f2a6775.json",
+					"jsonFile" : "target-ace-Debug-eef876a88e480f2a6775.json",
 					"name" : "ace",
 					"projectIndex" : 1
 				}

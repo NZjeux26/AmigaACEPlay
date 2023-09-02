@@ -103,7 +103,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-ldebug",
 				"role" : "flags"
 			}
 		],

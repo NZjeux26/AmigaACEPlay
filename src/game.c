@@ -1,9 +1,11 @@
 #include "game.h"
+#include "states.h"
 #include <ace/managers/key.h>
 #include <ace/managers/game.h>
 #include <ace/managers/system.h>
 #include <ace/managers/viewport/simplebuffer.h>
 #include <ace/managers/blit.h> // Blitting fns
+#include <ace/managers/state.h>
 #include <ace/utils/file.h>
 #include <ace/utils/font.h>
 #include <ace/utils/string.h>
@@ -45,6 +47,9 @@ int g_highScore = 0; //needs to be assigned prior to initialization
 static time_t startTime;
 bool g_scored = false;
 
+// void initializeGamestate(){
+//    g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, 0, 0);
+// }
 void gameGsCreate(void) {
   s_pView = viewCreate(0,
     TAG_VIEW_GLOBAL_PALETTE, 1,
@@ -189,7 +194,7 @@ void gameGsLoop(void) {
 
       if(Collision(&blocks[s], &player)){//check for collision
         highScoreCheck();
-        gameExit();
+        statePush(g_pStateManager, g_pMenuState);
       }
   }
 
