@@ -45,13 +45,14 @@ void menuGsCreate(void){
 }
 
 void menuGsLoop(void){
-    logWrite("In the loop!\n");
+    //logBlockBegin("In the Stating Menu Loop!\n");
+    //logWrite("In the loop!\n");
     if(keyCheck(KEY_ESCAPE)){
         logWrite("getting outta here!\n");
         gameExit();
     }
     else{
-        logWrite("Looking at that else!\n");
+        //logWrite("Looking at that else!\n");
         if(keyCheck(KEY_L)){
         logWrite("Going back to the Game!\n");
         stateChange(g_pStateManager, g_pGameState);
@@ -60,7 +61,7 @@ void menuGsLoop(void){
         }
         vPortWaitForEnd(s_pVpMain);
     }
-    
+    //logBlockEnd("In the Stating Menu Loop!\n");
 }
 
 void menuGsDestroy(void){

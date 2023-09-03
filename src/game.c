@@ -287,6 +287,7 @@ void highScoreCheck(void) {
     }
     else fileClose(file);//else do nothing
   }
+  systemUnuse();
 }
 //reads through the scoresheet to find the highest score and returns that to compare it with the current score by the player
 short getHighScore(void){
