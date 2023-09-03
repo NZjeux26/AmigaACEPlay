@@ -194,7 +194,7 @@ void gameGsLoop(void) {
 
       if(Collision(&blocks[s], &player)){//check for collision
         highScoreCheck();
-        statePush(g_pStateManager, g_pMenuState);
+        stateChange(g_pStateManager, g_pMenuState);
         return;
       }
   }
@@ -236,9 +236,11 @@ void gameGsLoop(void) {
 }
 
 void gameGsDestroy(void) {
+  logBlockBegin("gameGsDestroy");
   systemUse();
   // This will also destroy all associated viewports and viewport managers
   viewDestroy(s_pView);
+  logBlockEnd("gameGsDestroy");
 }
 
 void swap(int *a, int *b){//for bubble sort.
