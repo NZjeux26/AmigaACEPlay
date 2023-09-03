@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="3901"
 	>
 	<Testing>
-		<StartDateTime>Sep 02 20:21 NZST</StartDateTime>
-		<StartTestTime>1693642861</StartTestTime>
+		<StartDateTime>Sep 03 11:05 NZST</StartDateTime>
+		<StartTestTime>1693695950</StartTestTime>
 		<TestList/>
-		<EndDateTime>Sep 02 20:21 NZST</EndDateTime>
-		<EndTestTime>1693642861</EndTestTime>
+		<EndDateTime>Sep 03 11:05 NZST</EndDateTime>
+		<EndTestTime>1693695950</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

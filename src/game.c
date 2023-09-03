@@ -195,6 +195,7 @@ void gameGsLoop(void) {
       if(Collision(&blocks[s], &player)){//check for collision
         highScoreCheck();
         statePush(g_pStateManager, g_pMenuState);
+        return;
       }
   }
 

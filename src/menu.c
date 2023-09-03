@@ -25,11 +25,6 @@ tTextBitMap *menutextbitmap; //bitmap for the font
 
 tState *g_pMenuState;
 
-// void createMenuState(void){
-//     g_pMenuState = stateCreate(menuGsCreate, menuGsLoop, menuGsDestroy,0,0,0);
-//     statePush(g_pStateManager, g_pMenuState);
-// }
-
 void menuGsCreate(void){
     //create view port and the display buffer for the main viewport
     s_pView = viewCreate(0, TAG_VIEW_GLOBAL_PALETTE, 1, TAG_END);
@@ -52,11 +47,13 @@ void menuGsCreate(void){
 void menuGsLoop(void){
     if(keyCheck(KEY_ESCAPE)){
         gameExit();
+        return;
     }
     if(keyCheck(KEY_L)){
         logWrite("Going back to the Game!\n");
         stateChange(g_pStateManager, g_pGameState);
         logWrite("Switching!\n");
+        return;
     }
     vPortWaitForEnd(s_pVpMain);
 }

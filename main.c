@@ -18,7 +18,7 @@ void genericCreate(void) {
   keyCreate(); // We'll use keyboard
   // Initialize gamestate
   g_pStateManager = stateManagerCreate();
-  g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, gameGsCreate, g_pGameState);
+  g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, 0, g_pGameState);
   g_pMenuState = stateCreate(menuGsCreate, menuGsLoop, menuGsDestroy, 0, 0, 0);
   statePush(g_pStateManager, g_pGameState);
 }
@@ -33,7 +33,7 @@ void genericDestroy(void) {
   // Here goes your cleanup code
   stateManagerDestroy(g_pStateManager);
   stateDestroy(g_pGameState);
-  stateDestroy(g_pMenuState);//might not be needed
+  //stateDestroy(g_pMenuState);//might not be needed
   keyDestroy(); // We don't need it anymore
   logWrite("Goodbye, Amiga!\n");
 }
