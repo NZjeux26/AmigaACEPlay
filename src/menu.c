@@ -13,8 +13,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#define MENU_HEIGHT	(256-32)
-#define MENU_WIDTH	(320)
+#define MENU_HEIGHT	(256-32) //y
+#define MENU_WIDTH	(320) //x
 
 static tView *s_pMenuView; //view for all viewports
 static tVPort *s_pVpMain;//viewport for the menu
@@ -37,23 +37,24 @@ void menuGsCreate(void){
     s_pVpMain->pPalette[1] = 0xFFFF; //White
 
     menufont = fontCreate("myacefont.fnt");
-    menutextbitmap = fontCreateTextBitMapFromStr(menufont, "TEST MENU");
-    fontDrawTextBitMap(s_pMainBuffer->pBack, menutextbitmap, 50, 50, 1, FONT_COOKIE);
+    menutextbitmap = fontCreateTextBitMapFromStr(menufont, "GAME OVER!");
+    fontDrawTextBitMap(s_pMainBuffer->pBack, menutextbitmap, MENU_WIDTH / 2 - 36, MENU_HEIGHT / 2 - 16, 1, FONT_COOKIE);
+
+    menutextbitmap = fontCreateTextBitMapFromStr(menufont, "Play Again Y N?");
+    fontDrawTextBitMap(s_pMainBuffer->pBack, menutextbitmap, MENU_WIDTH / 2 - 56, MENU_HEIGHT / 2 - 5, 1, FONT_COOKIE);
 
     systemUnuse();
     viewLoad(s_pMenuView);
 }
 
 void menuGsLoop(void){
-    //logBlockBegin("In the Stating Menu Loop!\n");
-    //logWrite("In the loop!\n");
-    if(keyCheck(KEY_ESCAPE)){
+    if(keyCheck(KEY_N)){
         logWrite("getting outta here!\n");
         gameExit();
     }
     else{
         //logWrite("Looking at that else!\n");
-        if(keyCheck(KEY_L)){
+        if(keyCheck(KEY_Y)){
         logWrite("Going back to the Game!\n");
         stateChange(g_pStateManager, g_pGameState);
         logWrite("Switching!\n");
@@ -61,7 +62,6 @@ void menuGsLoop(void){
         }
         vPortWaitForEnd(s_pVpMain);
     }
-    //logBlockEnd("In the Stating Menu Loop!\n");
 }
 
 void menuGsDestroy(void){
