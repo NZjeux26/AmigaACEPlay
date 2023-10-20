@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: AmigaAceplay
-# Configuration: Debug
+# Configuration: Release
 # =============================================================================
 
 #############################################
@@ -109,6 +109,12 @@ build package: phony CMakeFiles/package.util
 
 
 #############################################
+# Utility command for generateAdf
+
+build generateAdf: phony CMakeFiles/generateAdf
+
+
+#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -161,12 +167,19 @@ build CMakeFiles/AmigaAceplay.dir/src/menu.c.obj: C_COMPILER__AmigaAceplay ../sr
 
 build AmigaAceplay: C_EXECUTABLE_LINKER__AmigaAceplay ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj CMakeFiles/AmigaAceplay.dir/main.c.obj CMakeFiles/AmigaAceplay.dir/src/game.c.obj CMakeFiles/AmigaAceplay.dir/src/menu.c.obj || ace/ace
   FLAGS = -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13
-  LINK_FLAGS = -ldebug
   OBJECT_DIR = CMakeFiles/AmigaAceplay.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = AmigaAceplay
   TARGET_PDB = AmigaAceplay.dbg
+
+
+#############################################
+# Custom command for CMakeFiles/generateAdf
+
+build CMakeFiles/generateAdf: CUSTOM_COMMAND
+  COMMAND = cd /home/nzjeux/local/AmigaACEPlay/build && /usr/bin/cmake -E make_directory /home/nzjeux/local/AmigaACEPlay/build/adf/s && /usr/bin/cmake -E copy /home/nzjeux/local/AmigaACEPlay/build/AmigaAceplay /home/nzjeux/local/AmigaACEPlay/build/adf && /usr/bin/cmake -E copy /home/nzjeux/local/AmigaACEPlay/build/myacefont.fnt /home/nzjeux/local/AmigaACEPlay/build/adf && /usr/bin/cmake -E echo AmigaAceplay > /home/nzjeux/local/AmigaACEPlay/build/adf/s/startup-sequence && exe2adf -l AmigaAceplay -a AmigaAceplay.adf -d /home/nzjeux/local/AmigaACEPlay/build/adf
+  DESC = Generating ADF file
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:

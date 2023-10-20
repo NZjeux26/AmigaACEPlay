@@ -5,6 +5,7 @@
 /home/nzjeux/local/AmigaACEPlay/build/CMakeFiles/list_install_components.dir
 /home/nzjeux/local/AmigaACEPlay/build/CMakeFiles/rebuild_cache.dir
 /home/nzjeux/local/AmigaACEPlay/build/CMakeFiles/package.dir
+/home/nzjeux/local/AmigaACEPlay/build/CMakeFiles/generateAdf.dir
 /home/nzjeux/local/AmigaACEPlay/build/CMakeFiles/edit_cache.dir
 /home/nzjeux/local/AmigaACEPlay/build/CMakeFiles/AmigaAceplay.dir
 /home/nzjeux/local/AmigaACEPlay/build/ace/CMakeFiles/install/strip.dir

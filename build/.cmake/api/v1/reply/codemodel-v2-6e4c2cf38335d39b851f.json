@@ -19,7 +19,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						2
 					]
 				},
 				{
@@ -38,7 +39,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -53,7 +54,8 @@
 					"name" : "AmigaAceplay",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						2
 					]
 				},
 				{
@@ -74,16 +76,23 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AmigaAceplay::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AmigaAceplay-Debug-a87e7d2495588228cc6a.json",
+					"jsonFile" : "target-AmigaAceplay-Release-45e5f08d7fc625d95150.json",
 					"name" : "AmigaAceplay",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ace::@c3ba06c9fd8ad93ec66a",
-					"jsonFile" : "target-ace-Debug-eef876a88e480f2a6775.json",
+					"jsonFile" : "target-ace-Release-eef876a88e480f2a6775.json",
 					"name" : "ace",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generateAdf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generateAdf-Release-38e9e9fc97e7c3a09e8e.json",
+					"name" : "generateAdf",
+					"projectIndex" : 0
 				}
 			]
 		}
