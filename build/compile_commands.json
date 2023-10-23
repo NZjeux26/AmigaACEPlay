@@ -1,253 +1,267 @@
 [
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer -o CMakeFiles/AmigaAceplay.dir/main.c.obj   -c /home/nzjeux/local/AmigaACEPlay/main.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/main.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -Dsmite_VERSION=\\\"23.10.23\\\" -ID:/development/Amiga/AmigaACEPlay/include -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -fomit-frame-pointer -std=gnu17 -o CMakeFiles\\Amigaaceplay.elf.dir\\main.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\main.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\main.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer -o CMakeFiles/AmigaAceplay.dir/src/game.c.obj   -c /home/nzjeux/local/AmigaACEPlay/src/game.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/src/game.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -Dsmite_VERSION=\\\"23.10.23\\\" -ID:/development/Amiga/AmigaACEPlay/include -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -fomit-frame-pointer -std=gnu17 -o CMakeFiles\\Amigaaceplay.elf.dir\\src\\game.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\src\\game.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\src\\game.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -fomit-frame-pointer -o CMakeFiles/AmigaAceplay.dir/src/menu.c.obj   -c /home/nzjeux/local/AmigaACEPlay/src/menu.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/src/menu.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -Dsmite_VERSION=\\\"23.10.23\\\" -ID:/development/Amiga/AmigaACEPlay/include -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -fomit-frame-pointer -std=gnu17 -o CMakeFiles\\Amigaaceplay.elf.dir\\src\\menu.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\src\\menu.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\src\\menu.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/audio.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/audio.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\audio.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\audio.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\audio.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/blit.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/blit.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/blit.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\blit.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\blit.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\blit.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/bob.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/bob.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/bob.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\bob.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\bob.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\bob.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/copper.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/copper.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/copper.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\copper.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\copper.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\copper.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/game.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/game.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/game.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\game.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\game.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\game.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/joy.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/joy.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/joy.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\joy.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\joy.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\joy.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/key.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/key.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/key.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\key.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\key.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\key.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/log.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/log.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/log.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\log.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\log.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\log.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/memory.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/memory.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/memory.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\memory.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\memory.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\memory.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/mouse.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/mouse.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/mouse.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\mouse.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\mouse.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\mouse.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/ptplayer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/ptplayer.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/ptplayer.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\ptplayer.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\ptplayer.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\ptplayer.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/rand.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/rand.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/rand.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\rand.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\rand.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\rand.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/sprite.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/sprite.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/sprite.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\sprite.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\sprite.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\sprite.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/state.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/state.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/state.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\state.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\state.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\state.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/system.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/system.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/system.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\system.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\system.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\system.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/timer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/timer.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/timer.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\timer.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\timer.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\timer.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/camera.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/camera.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/camera.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\viewport\\camera.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\camera.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\camera.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/scrollbuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/scrollbuffer.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/scrollbuffer.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\viewport\\scrollbuffer.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\scrollbuffer.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\scrollbuffer.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/simplebuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/simplebuffer.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/simplebuffer.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\viewport\\simplebuffer.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\simplebuffer.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\simplebuffer.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/managers/viewport/tilebuffer.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/tilebuffer.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/managers/viewport/tilebuffer.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\managers\\viewport\\tilebuffer.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\tilebuffer.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\managers\\viewport\\tilebuffer.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/bitmap.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bitmap.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bitmap.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\bitmap.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\bitmap.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\bitmap.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/bmframe.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bmframe.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/bmframe.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\bmframe.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\bmframe.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\bmframe.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/chunky.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/chunky.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/chunky.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\chunky.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\chunky.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\chunky.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/custom.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/custom.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/custom.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\custom.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\custom.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\custom.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/dir.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/dir.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/dir.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\dir.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\dir.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\dir.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/extview.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/extview.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/extview.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\extview.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\extview.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\extview.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/file.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/file.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/file.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\file.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\file.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\file.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/font.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/font.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/font.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\font.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\font.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\font.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/palette.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/palette.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/palette.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\palette.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\palette.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\palette.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/sprite.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/sprite.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/sprite.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\sprite.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\sprite.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\sprite.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/string.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/string.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/string.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\string.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\string.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\string.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/ace/utils/tag.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/tag.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/ace/utils/tag.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\ace\\utils\\tag.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\tag.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\ace\\utils\\tag.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\fix16.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_exp.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_exp.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_exp.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\fix16_exp.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_exp.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_exp.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_sqrt.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_sqrt.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_sqrt.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\fix16_sqrt.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_sqrt.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_sqrt.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_str.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_str.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_str.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\fix16_str.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_str.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_str.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fix16_trig.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_trig.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fix16_trig.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\fix16_trig.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_trig.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fix16_trig.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/fract32.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fract32.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/fract32.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\fract32.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fract32.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\fract32.c"
 },
-
 {
-  "directory": "/home/nzjeux/local/AmigaACEPlay/build",
-  "command": "/home/nzjeux/local/amiga-gcc/bin/m68k-amigaos-gcc -DACE_DEBUG -DAMIGA -I../deps/ace/include  -m68000 -msoft-float -fomit-frame-pointer -mcrt=nix13   -Wall -Wextra -fomit-frame-pointer -o ace/CMakeFiles/ace.dir/src/fixmath/uint32.c.obj   -c /home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/uint32.c",
-  "file": "/home/nzjeux/local/AmigaACEPlay/deps/ace/src/fixmath/uint32.c"
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\fixmath\\uint32.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\uint32.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\fixmath\\uint32.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include  -Wa,-g,--register-prefix-optional -g -o ace\\CMakeFiles\\ace.dir\\src\\bartman\\gcc8_a_support.s.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\bartman\\gcc8_a_support.s",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\bartman\\gcc8_a_support.s"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\bartman\\gcc8_c_support.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\bartman\\gcc8_c_support.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\bartman\\gcc8_c_support.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\ctype.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\ctype.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\ctype.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\errno.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\errno.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\errno.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\intrin.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\intrin.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\intrin.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\printf.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\printf.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\printf.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\stdio_file.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\stdio_file.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\stdio_file.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\stdio_putchar.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\stdio_putchar.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\stdio_putchar.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\stdlib.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\stdlib.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\stdlib.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\string.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\string.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\string.c"
+},
+{
+  "directory": "D:/development/Amiga/AmigaACEPlay/build",
+  "command": "c:\\Users\\ADAMTE~1\\VSCODE~1\\EXTENS~1\\BARTMA~1.4\\bin\\win32\\opt\\bin\\M68K-A~3.EXE --sysroot=\"c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt\" -DAMIGA -DBARTMAN_GCC -DPRINTF_DISABLE_SUPPORT_FLOAT -DPRINTF_DISABLE_SUPPORT_LONG_LONG -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/bartman -ID:/development/Amiga/AmigaACEPlay/deps/ace/include/mini_std -ID:/development/Amiga/AmigaACEPlay/deps/ace/include   -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections  -g -Wall -Wextra -fomit-frame-pointer -std=gnu17 -o ace\\CMakeFiles\\ace.dir\\src\\mini_std\\strtoul.c.obj -c D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\strtoul.c",
+  "file": "D:\\development\\Amiga\\AmigaACEPlay\\deps\\ace\\src\\mini_std\\strtoul.c"
 }
 ]
