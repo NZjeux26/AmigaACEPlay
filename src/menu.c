@@ -9,9 +9,9 @@
 #include <ace/utils/file.h>
 #include <ace/utils/font.h>
 #include <ace/utils/string.h>
-#include <time.h>
-#include <stdbool.h>
-#include <stdlib.h>
+// #include <time.h>
+// #include <stdbool.h>
+// #include <stdlib.h>
 
 #define MENU_HEIGHT	(256-32) //y
 #define MENU_WIDTH	(320) //x
@@ -22,8 +22,6 @@ static tSimpleBufferManager *s_pMainBuffer;
 
 tFont *menufont;    //font
 tTextBitMap *menutextbitmap; //bitmap for the font
-
-tState *g_pMenuState;
 
 void menuGsCreate(void){
     //create view port and the display buffer for the main viewport
