@@ -57,7 +57,9 @@ UBYTE g_scored = false;
 // }
 void gameGsCreate(void)
 {
-  s_pRandManager = randCreate(110,10);
+  tRayPos sRayPos = getRayPos();
+
+  s_pRandManager = randCreate(1+(sRayPos.bfPosY << 8), 1 + sRayPos.bfPosX);
   s_pView = viewCreate(0,
                        TAG_VIEW_GLOBAL_PALETTE, 1,
                        TAG_END);
@@ -252,6 +254,8 @@ void gameGsLoop(void)
       g_scored = false;
       updateScore(); // moved into function for code clarity
     }
+   
+    copProcessBlocks();
     vPortWaitForEnd(s_pVpMain);
   }
 }
