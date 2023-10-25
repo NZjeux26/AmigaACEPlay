@@ -1,8 +1,8 @@
-# Install script for directory: /home/nzjeux/local/AmigaACEPlay/deps/ace
+# Install script for directory: D:/development/Amiga/AmigaACEPlay/deps/ace
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nzjeux/local/amiga/usr")
+  set(CMAKE_INSTALL_PREFIX "c:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt/usr")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -32,8 +32,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/objects-Release/ace" TYPE FILE FILES
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/Users/Adam Templeton/.vscode/extensions/bartmanabyss.amiga-debug-1.7.4/bin/win32/opt/bin/m68k-amiga-elf-objdump.exe")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/objects-Debug/ace" TYPE FILE FILES
     "src/ace/managers/audio.c.obj"
     "src/ace/managers/blit.c.obj"
     "src/ace/managers/bob.c.obj"
@@ -73,80 +78,91 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "src/fixmath/fix16_trig.c.obj"
     "src/fixmath/fract32.c.obj"
     "src/fixmath/uint32.c.obj"
-    FILES_FROM_DIR "/home/nzjeux/local/AmigaACEPlay/build/ace/CMakeFiles/ace.dir/")
+    "src/bartman/gcc8_a_support.s.obj"
+    "src/bartman/gcc8_c_support.c.obj"
+    "src/mini_std/ctype.c.obj"
+    "src/mini_std/errno.c.obj"
+    "src/mini_std/intrin.c.obj"
+    "src/mini_std/printf.c.obj"
+    "src/mini_std/stdio_file.c.obj"
+    "src/mini_std/stdio_putchar.c.obj"
+    "src/mini_std/stdlib.c.obj"
+    "src/mini_std/string.c.obj"
+    "src/mini_std/strtoul.c.obj"
+    FILES_FROM_DIR "D:/development/Amiga/AmigaACEPlay/build/ace/CMakeFiles/ace.dir/./")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ace" TYPE FILE FILES
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/macros.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/types.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/macros.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/types.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ace/generic" TYPE FILE FILES
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/generic/main.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/generic/screen.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/generic/main.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/generic/screen.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ace/utils" TYPE FILE FILES
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/bitmap.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/bmframe.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/chunky.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/custom.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/dir.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/endian.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/extview.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/file.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/font.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/mini_std.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/palette.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/sprite.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/string.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/utils/tag.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/bitmap.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/bmframe.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/chunky.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/custom.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/dir.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/endian.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/extview.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/file.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/font.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/mini_std.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/palette.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/sprite.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/string.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/utils/tag.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ace/managers" TYPE FILE FILES
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/audio.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/blit.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/bob.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/copper.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/game.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/joy.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/key.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/log.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/memory.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/mouse.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/ptplayer.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/rand.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/sprite.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/state.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/system.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/timer.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/audio.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/blit.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/bob.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/copper.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/game.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/joy.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/key.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/log.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/memory.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/mouse.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/ptplayer.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/rand.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/sprite.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/state.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/system.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/timer.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ace/managers/viewport" TYPE FILE FILES
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/viewport/camera.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/viewport/scrollbuffer.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/viewport/simplebuffer.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/ace/managers/viewport/tilebuffer.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/viewport/camera.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/viewport/scrollbuffer.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/viewport/simplebuffer.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/ace/managers/viewport/tilebuffer.h"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/fixmath" TYPE FILE FILES
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/fixmath/fix16.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/fixmath/fix16_trig_sin_lut.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/fixmath/fixmath.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/fixmath/fract32.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/fixmath/int64.h"
-    "/home/nzjeux/local/AmigaACEPlay/deps/ace/include/fixmath/uint32.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/fixmath/fix16.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/fixmath/fix16_trig_sin_lut.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/fixmath/fixmath.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/fixmath/fract32.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/fixmath/int64.h"
+    "D:/development/Amiga/AmigaACEPlay/deps/ace/include/fixmath/uint32.h"
     )
 endif()
 

@@ -10,13 +10,14 @@
 #include "src/states.h"
 
 tStateManager *g_pStateManager;
-tState *g_pGameState;
-tState *g_pMenuState;
+ tState *g_pGameState;
+ tState *g_pMenuState;
 
 void genericCreate(void) {
   // Here goes your startup code
   keyCreate(); // We'll use keyboard
   // Initialize gamestate
+  timerCreate();
   g_pStateManager = stateManagerCreate();
   g_pGameState = stateCreate(gameGsCreate, gameGsLoop, gameGsDestroy, 0, 0, 0);
   g_pMenuState = stateCreate(menuGsCreate, menuGsLoop, menuGsDestroy, 0, 0, 0);
@@ -25,7 +26,9 @@ void genericCreate(void) {
 
 void genericProcess(void) {
   // Here goes code done each game frame
+  timerProcess();
   keyProcess();
+  
   stateProcess(g_pStateManager); // Process current gamestate's loop
 }
 
